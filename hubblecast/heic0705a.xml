@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<episode>
+  <created>2010-09-05T12:22:08Z</created>
+  <episodeNumber>1</episodeNumber>
+  <seriesNumber>1</seriesNumber>
+  <curie>spacetelescope.org:heic0705a</curie>
+  <title>Hubblecast 01</title>
+  <description><![CDATA[
+	The NASA/ESA Hubble Space Telescope, in collaboration with several other ground- and space-based telescopes, has captured a galaxy being ripped apart by a galaxy cluster's gravitational field and harsh environment.
+
+The finding sheds light on the mysterious process by which gas-rich spiral-shaped galaxies might evolve into gas-poor irregular- or elliptical-shaped galaxies over billions of years.]]>
+</description>
+  <publisher>
+	<key>spacetelescope.org</key>
+	<name>ESA/Hubble</name>
+	<country>ALL</country>
+  </publisher>
+  <genre>/genres/nonfiction/sciences/space</genre>
+  <format>/formats/structured/documentary</format>
+  <person>/people/luca-cortesse</person>
+  <person>/people/jean-paul-kneib</person>
+  <topic>http://dbpedia.org/resource/Hubble_Space_Telescope</topic>
+  <topic>http://dbpedia.org/resource/Abell_2667</topic>
+  <uri>http://www.spacetelescope.org/videos/heic0705a/</uri>
+  <shortDescription>
+	Hubble sees 'Comet Galaxy' being ripped apart by galaxy cluster
+  </shortDescription>
+  <mediumDescription>
+	The NASA/ESA Hubble Space Telescope, in collaboration with several other ground- and space-based telescopes, has captured a galaxy being ripped apart by a galaxy cluster's gravitational field and harsh environment.
+  </mediumDescription>
+</episode>

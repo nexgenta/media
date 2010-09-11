@@ -1,34 +1,11 @@
 {
 	"uuid":"7ce1a6e8-3ab0-4823-a80e-ccf4af434957",
+	"kind":"episode",
 	"created":"2010-09-05T12:22:08Z",
 	"modified":"2010-09-05T12:22:08Z",
 	"episodeNumber":1,
 	"seriesNumber":1,
 	"title":"Hubblecast 01",
-	"locations":[
-		{
-			"duration":549,
-			"publishedDuration":549,
-			"advertisingDuration":0,
-			"audioBitRate":128,
-			"audioChannels":2,
-			"audioCoding":"audio/aac",
-			"bitRate":2517,
-			"containsAdvertising":0,
-			"dataContainerFormat":"video/mp4",
-			"dataSize":109849877,
-			"distributor":"spacetelescope.org",
-			"hasDOG":0,
-			"videoCoding":"video/h264",
-			"videoFrameRate":25,
-			"videoHorizontalSize":720,
-			"videoProgressiveScan":1,
-			"videoVerticalSize":540,
-			"transport_type":"download",
-			"uri":"http://www.spacetelescope.org/static/archives/videos/h264/heic0705a.mp4",
-			"available":1
-		}
-	],
 	"broadcasts":[],
 	"aliases":[
 		"http://www.spacetelescope.org/videos/heic0705a/"

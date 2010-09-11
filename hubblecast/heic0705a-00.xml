@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<version>
+  <episode>spacetelescope.org:heic0705a</episode>
+  <location>
+	<duration>549</duration>
+	<publishedDuration>549</publishedDuration>
+	<advertisingDuration>0</advertisingDuration>
+	<audioBitRate>0</audioBitRate>
+	<audioChannels>0</audioChannels>
+	<audioCoding>mp4a.40.2</audioCoding>
+	<bitRate>2517</bitRate>
+	<containsAdvertising>0</containsAdvertising>
+	<dataContainerFormat>video/mp4</dataContainerFormat>
+	<dataSize>109849877</dataSize>
+	<distributor>spacetelescope.org</distributor>
+	<hasDog>0</hasDog>
+	<videoCoding>avc1.42E01E</videoCoding>
+	<videoFrameRate>25</videoFrameRate>
+	<videoHorizontalSize>720</videoHorizontalSize>
+	<videoProgressiveScan>1</videoProgressiveScan>
+	<videoVerticalSize>540</videoVerticalSize>
+	<transportType>download</transportType>
+	<uri>http://www.spacetelescope.org/static/archives/videos/h264/heic0705a.mp4</uri>
+	<available>1</available>	
+  </location>
+</version>
