@@ -22,24 +22,62 @@ require_once(dirname(__FILE__) . '/asset.php');
 
 class Episode extends Asset
 {
+	protected $relativeURI;
+
 	public function verify()
 	{
 		$model = self::$models[get_class($this)];
+		if(isset($this->show))
+		{
+			if((null !== ($uuid = UUID::isUUID($this->show))) || (null !== ($uuid = $model->uuidForCurie($this->show))))
+			{
+				$this->referenceObject('show', $uuid);
+			}
+			else
+			{
+				return "Referenced show '" . $this->show . "' does not exist yet.";
+			}
+		}
 		if(isset($this->series))
 		{
-			if(!$model->uuidForCurie($this->series))
+			if((null !== ($uuid = UUID::isUUID($this->series))) || (null !== ($uuid = $model->uuidForCurie($this->series))))
+			{
+				$this->referenceObject('series', $uuid);
+			}
+			else
 			{
 				return "Referenced episode '" . $this->series . "' does not exist yet.";
 			}
 		}
-		if(isset($this->show))
-		{
-			if(!$model->uuidForCurie($this->show))
-			{
-				return "Referenced episode '" . $this->show . "' does not exist yet.";
-			}
-		}
 		return parent::verify();
+	}
+	
+	public function __get($name)
+	{
+		if($name == 'relativeURI')
+		{
+			if(!strlen($this->relativeURI))
+			{
+				if(isset($this->slug))
+				{
+					$this->relativeURI = $this->slug;
+				}
+				else
+				{
+					$this->relativeURI = $this->uuid;
+				}
+				if(isset($this->series) && ($obj = $this->offsetGet('series')) && is_object($obj))
+				{
+					$this->relativeURI = $obj->relativeURI . '/' . $this->relativeURI;
+				}
+				else if(isset($this->show) && ($obj = $this->offsetGet('show')) && is_object($obj))
+				{
+					$this->relativeURI = $obj->relativeURI . '/' . $this->relativeURI;
+				}
+			}
+			return $this->relativeURI;
+		}
+		return parent::__get($name);
 	}
 }
 

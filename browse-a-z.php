@@ -18,27 +18,25 @@
  *  limitations under the License.
  */
 
-uses('uuid');
+require_once(dirname(__FILE__) . '/model.php');
 
-require_once(dirname(__FILE__) . '/asset.php');
+class MediaBrowseAZ extends Page
+{	
+	protected $templateName = 'list.phtml';
+	protected $modelClass = 'Media';
 
-class Version extends Asset
-{
-	public function verify()
+	protected function getObject()
 	{
-		$model = self::$models[get_class($this)];
-		if(isset($this->episode))
+		if(strcmp($this->request->consume(), 'by'))
 		{
-			if((null !== ($uuid = UUID::isUUID($this->episode))) || (null !== ($uuid = $model->uuidForCurie($this->episode))))
-			{
-				$this->referenceObject('episode', $uuid);
-			}
-			else
-			{
-				return "Referenced episode '" . $this->episode . "' does not exist yet.";
-			}
+			return $this->error(Error::OBJECT_NOT_FOUND);
 		}
-		return parent::verify();
+		$letter = strtolower($this->request->consume());
+		if(!ctype_alpha($letter) && $letter != '*')
+		{
+			return $this->error(Error::OBJECT_NOT_FOUND);
+		}
+		$this->objects = $this->model->query(array('parent' => null, 'title_firstchar' => $letter));		
+		return true;
 	}
 }
-

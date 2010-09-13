@@ -18,27 +18,37 @@
  *  limitations under the License.
  */
 
-uses('uuid');
-
 require_once(dirname(__FILE__) . '/asset.php');
 
-class Version extends Asset
+class Show extends Asset
 {
+	protected $relativeURI;
+
 	public function verify()
 	{
 		$model = self::$models[get_class($this)];
-		if(isset($this->episode))
-		{
-			if((null !== ($uuid = UUID::isUUID($this->episode))) || (null !== ($uuid = $model->uuidForCurie($this->episode))))
-			{
-				$this->referenceObject('episode', $uuid);
-			}
-			else
-			{
-				return "Referenced episode '" . $this->episode . "' does not exist yet.";
-			}
-		}
+
 		return parent::verify();
+	}
+	
+	public function __get($name)
+	{
+		if($name == 'relativeURI')
+		{
+			if(!strlen($this->relativeURI))
+			{
+				if(isset($this->slug))
+				{
+					$this->relativeURI = $this->slug;
+				}
+				else
+				{
+					$this->relativeURI = $this->uuid;
+				}
+			}
+			return $this->relativeURI;
+		}
+		return parent::__get($name);
 	}
 }
 

@@ -50,7 +50,8 @@ class Media extends Store
 		$json = $args['json'];
 		$lazy = $args['lazy'];
 		$data = $args['data'];
-		
+	
+		$this->db->exec('DELETE FROM {media_core} WHERE "uuid" = ?', $uuid);
 		if(!isset($data['iri']))
 		{
 			$data['iri'] = array();
@@ -75,6 +76,10 @@ class Media extends Store
 		{
 			$data['tags'] = array_merge($data['tags'], $data['topics']);
 		}
+		if(isset($data['slug']))
+		{
+			$data['tag'] = $data['slug'];
+		}
 		if(isset($data['curie']))
 		{
 			if(is_array($data['curie']))
@@ -89,21 +94,85 @@ class Media extends Store
 				$data['iri'][] = '[' . $data['curie'] . ']';
 			}
 		}
-		$rels = array();
-		if(isset($data['episode']))
+		$coreinfo = array();
+		if(isset($data['title']))
 		{
-			$rels[] = array('type' => 'episode', 'target' => $data['episode']);
+			$title = preg_replace('![^a-z0-9]!i', '-', strtolower(trim($data['title'])));
+			while(substr($title, 0, 1) == '-') $title = substr($title, 1);
+			while(substr($title, -1) == '-') $title = substr($title, 0, -1);
+			while(strstr($title, '--') !== false) $title = str_replace('--', '-', $title);
+			if(strlen($title))
+			{
+				$coreinfo['title'] = $title;
+				if(ctype_alpha($title[0]))
+				{
+					$coreinfo['title_firstchar'] = $title[0];
+				}
+				else
+				{
+					$coreinfo['title_firstchar'] = '*';
+				}
+			}
 		}
-		if(isset($data['series']))
+		switch($data['kind'])
 		{
-			$rels[] = array('type' => 'series', 'target' => $data['series']);
+		case 'version':
+			if(isset($data['episode']))
+			{
+				$coreinfo['parent'] = $data['episode'];
+			}
+		case 'episode':
+			if(isset($data['series']))
+			{
+				$coreinfo['parent'] = $data['series'];
+			}
+			else if(isset($data['show']))
+			{
+				$coreinfo['parent'] = $data['show'];
+			}
+			break;
+		case 'series':
+			if(isset($data['show']))
+			{
+				$coreinfo['parent'] = $data['show'];
+			}
+			break;
 		}
-		if(isset($data['show']))
+		if(count($coreinfo))
 		{
-			$rels[] = array('type' => 'show', 'target' => $data['show']);
+			$coreinfo['uuid'] = $uuid;
+			$this->db->insert('media_core', $coreinfo);
 		}
-		print_r($rels);
 		$args['data'] = $data;
 		return parent::storedTransaction($db, $args);
+	}
+
+	protected function buildQuery(&$qlist, &$tables, &$query)
+	{
+		if(!isset($tables['media_core'])) $tables['media_core'] = 'media_core';
+
+		foreach($query as $k => $v)
+		{
+			$value = $v;
+			switch($k)
+			{
+			case 'parent':
+				unset($query[$k]);
+				if($v === null)
+				{
+					$qlist['media_core'][] = '"media_core"."parent" IS NULL';
+				}
+				else
+				{
+					$qlist['media_core'][] = '"media_core"."parent" = ' . $this->db->quote($v);
+				}
+				break;
+			case 'title_firstchar':
+				unset($query[$k]);
+				$qlist['media_core'][] = '"media_core"."title_firstchar" = ' . $this->db->quote($v);
+				break;
+			}
+		}
+		return parent::buildQuery($qlist, $tables, $query);
 	}
 }

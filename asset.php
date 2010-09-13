@@ -47,6 +47,10 @@ class Asset extends Storable
 				require_once(dirname(__FILE__) . '/episode.php');
 				$className = 'Episode';
 				break;
+			case 'show':
+				require_once(dirname(__FILE__) . '/show.php');
+				$className = 'Show';
+				break;
 			default:
 				trigger_error('Asset::objectForData(): No suitable class for a "' . $data['kind'] . '" asset is available', E_USER_NOTICE);
 				return null;

@@ -25,6 +25,7 @@ if(!defined('MEDIA_IRI')) define('MEDIA_IRI', null);
 class MediaModule extends Module
 {
 	public $moduleId = 'com.nexgenta.media';
+	public $latestVersion = 1;
 
 	public static function getInstance($args = null)
 	{
@@ -36,6 +37,24 @@ class MediaModule extends Module
 	protected function dependencies()
 	{
 		$this->depend('com.nexgenta.eregansu.store');
+	}
+
+	public function updateSchema($targetVersion)
+	{
+		if($targetVersion == 1)
+		{
+			$t = $this->db->schema->tableWithOptions('media_core', DBTable::CREATE_ALWAYS);
+			$t->columnWithSpec('uuid', DBType::UUID, null, DBCol::NOT_NULL, null, 'Object UUID');
+			$t->columnWithSpec('title', DBType::VARCHAR, 64, DBCol::NULLS, null, 'Normalised title of the item');
+			$t->columnWithSpec('title_firstchar', DBType::CHAR, 1, DBCol::NULLS, null, 'First character of the title');
+			$t->columnWithSpec('parent', DBType::UUID, null, DBCol::NULLS, null, 'Parent object, excluding brands');
+			$t->indexWithSpec(null, DBIndex::PRIMARY, 'uuid');
+			$t->indexWithSpec('title', DBIndex::INDEX, 'title');
+			$t->indexWithSpec('title_firstchar', DBIndex::INDEX, 'title_firstchar');
+			$t->indexWithSpec('parent', DBIndex::INDEX, 'parent');
+			return $t->apply();
+		}
+		return false;
 	}
 }
 

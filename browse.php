@@ -59,7 +59,8 @@ class MediaBrowse extends Page
 			case 'episode':
 				if(isset($this->object->series) || isset($this->object->show))
 				{
-					return $this->canonicalEpisodeRedirect();
+					$this->request->redirect($this->request->base . $this->object->relativeURI);
+					return false;
 				}
 				require_once(dirname(__FILE__) . '/browse-episode.php');
 				$inst = new MediaBrowseEpisode();
@@ -67,7 +68,7 @@ class MediaBrowse extends Page
 				$inst->process($this->request);
 				return false;
 			}
-			print_r($row);
+			print_r($this->object);
 			die();
 		}
 		return $this->error(Error::OBJECT_NOT_FOUND);
