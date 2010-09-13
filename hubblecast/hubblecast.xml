@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<show>
+  <curie>spacetelescope.org:hubblecast</curie>
+  <title>Hubblecast</title>
+  <publisher>
+	<key>spacetelescope.org</key>
+	<name>ESA/Hubble</name>
+	<country>ALL</country>
+  </publisher>
+  <slug>hubblecast</slug>
+</show>
+

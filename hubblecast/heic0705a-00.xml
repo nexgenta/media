@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <version>
   <episode>spacetelescope.org:heic0705a</episode>
+  <curie>spacetelescope.org:heic0705a-00</curie>
   <location>
 	<duration>549</duration>
 	<publishedDuration>549</publishedDuration>
