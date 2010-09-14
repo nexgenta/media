@@ -12,6 +12,11 @@
 	<slug>general</slug>
   </term>
   <term>
+	<uri>urn:tva:metadata:cs:ContentCS:2010:3.1.6</uri>
+	<title>Science &amp; Nature</title>
+	<slug>science-nature</slug>
+  </term>
+  <term>
 	<uri>urn:tva:metadata:cs:ContentCS:2010:3.4</uri>
 	<title>Drama</title>
 	<slug>drama</slug>

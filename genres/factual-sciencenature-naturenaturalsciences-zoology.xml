@@ -4,5 +4,5 @@
 	<description>Zoology</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6.2.4</sameAs>
 	<slug>zoology</slug>
-	<parent>/factual/sciences/nature-natural-sciences</parent>
+	<parent>/factual/science-nature/nature-natural-sciences</parent>
 </genre>

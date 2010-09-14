@@ -4,5 +4,5 @@
 	<description>Spiritual</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6.12</sameAs>
 	<slug>spiritual</slug>
-	<parent>/factual/sciences</parent>
+	<parent>/factual/science-nature</parent>
 </genre>

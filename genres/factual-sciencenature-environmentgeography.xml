@@ -4,5 +4,5 @@
 	<description>Environment/Geography</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6.4</sameAs>
 	<slug>environment-geography</slug>
-	<parent>/factual/sciences</parent>
+	<parent>/factual/science-nature</parent>
 </genre>

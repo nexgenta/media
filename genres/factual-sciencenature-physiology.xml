@@ -4,5 +4,5 @@
 	<description>Physiology</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6.9</sameAs>
 	<slug>physiology</slug>
-	<parent>/factual/sciences</parent>
+	<parent>/factual/science-nature</parent>
 </genre>

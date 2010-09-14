@@ -4,5 +4,5 @@
 	<description>Animals/Wildlife</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6.3</sameAs>
 	<slug>animals-wildlife</slug>
-	<parent>/factual/sciences</parent>
+	<parent>/factual/science-nature</parent>
 </genre>
