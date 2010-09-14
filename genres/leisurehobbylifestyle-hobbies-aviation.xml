@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Aviation</title>
+	<description>Aviation</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.5.12</sameAs>
+	<slug>aviation</slug>
+	<parent>/genres/leisure-hobby-lifestyle/hobbies/</parent>
+</genre>

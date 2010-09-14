@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Judo</title>
+	<description>Judo</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.5.3</sameAs>
+	<slug>judo</slug>
+	<parent>/genres/sports/martial-arts/</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Triathlon</title>
+	<description>Triathlon</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.1.6</sameAs>
+	<slug>triathlon</slug>
+	<parent>/genres/sports/athletics/</parent>
+</genre>

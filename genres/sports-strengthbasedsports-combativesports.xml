@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Combative sports</title>
+	<description>Combative sports</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.13.3</sameAs>
+	<slug>combative-sports</slug>
+	<parent>/genres/sports/strength-based-sports/</parent>
+</genre>

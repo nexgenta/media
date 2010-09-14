@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Experimental</title>
+	<description>Experimental</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.18</sameAs>
+	<slug>experimental</slug>
+	<parent>/genres/music/</parent>
+</genre>

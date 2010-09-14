@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Sambo</title>
+	<description>Sambo</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.5.7</sameAs>
+	<slug>sambo</slug>
+	<parent>/genres/sports/martial-arts/</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Dynamic 2D/3D graphics</title>
+	<description>Dynamic 2D/3D graphics</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.2.6</sameAs>
+	<slug>dynamic-2d-3d-graphics</slug>
+	<parent>/genres/interactive-games/style/</parent>
+</genre>

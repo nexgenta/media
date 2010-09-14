@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Parenting</title>
+	<description>Parenting</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.7.5</sameAs>
+	<slug>parenting</slug>
+	<parent>/genres/leisure-hobby-lifestyle/personal-lifestyle-family/</parent>
+</genre>

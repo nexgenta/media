@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Indy car</title>
+	<description>Indy car</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.5</sameAs>
+	<slug>indy-car</slug>
+	<parent>/genres/sports/motor-sports/</parent>
+</genre>

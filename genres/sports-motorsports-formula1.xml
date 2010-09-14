@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Formula 1</title>
+	<description>Formula 1</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.4</sameAs>
+	<slug>formula-1</slug>
+	<parent>/genres/sports/motor-sports/</parent>
+</genre>

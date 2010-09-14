@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Soft tennis</title>
+	<description>Soft tennis</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.4.4</sameAs>
+	<slug>soft-tennis</slug>
+	<parent>/genres/sports/racket-sports/</parent>
+</genre>

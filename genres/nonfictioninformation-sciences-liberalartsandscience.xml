@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Liberal Arts and Science</title>
+	<description>Liberal Arts and Science</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6.16</sameAs>
+	<slug>liberal-arts-and-science</slug>
+	<parent>/genres/non-fiction-information/sciences/</parent>
+</genre>

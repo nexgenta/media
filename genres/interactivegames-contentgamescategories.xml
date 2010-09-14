@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>CONTENT GAMES CATEGORIES</title>
+	<description>CONTENT GAMES CATEGORIES</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.1</sameAs>
+	<slug>content-games-categories</slug>
+	<parent>/genres/interactive-games/</parent>
+</genre>

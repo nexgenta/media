@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Volleyball</title>
+	<description>Volleyball</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.21</sameAs>
+	<slug>volleyball</slug>
+	<parent>/genres/sports/team-sports/</parent>
+</genre>

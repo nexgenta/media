@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Pop jazz/Jazz funk</title>
+	<description>Pop jazz/Jazz funk</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.9</sameAs>
+	<slug>pop-jazz-jazz-funk</slug>
+	<parent>/genres/music/jazz/</parent>
+</genre>

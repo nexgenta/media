@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Medieval (before 1400)</title>
+	<description>Medieval (before 1400)</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.16.1</sameAs>
+	<slug>medieval-before-1400</slug>
+	<parent>/genres/music/era/</parent>
+</genre>

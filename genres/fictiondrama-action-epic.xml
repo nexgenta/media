@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Epic</title>
+	<description>Epic</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.6.13</sameAs>
+	<slug>epic</slug>
+	<parent>/genres/fiction-drama/action/</parent>
+</genre>

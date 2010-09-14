@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Kabadi</title>
+	<description>Kabadi</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.25</sameAs>
+	<slug>kabadi</slug>
+	<parent>/genres/sports/team-sports/</parent>
+</genre>

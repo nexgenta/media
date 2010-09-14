@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Glam Rock</title>
+	<description>Glam Rock</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.14.3</sameAs>
+	<slug>glam-rock</slug>
+	<parent>/genres/music/pop-rock/rock/</parent>
+</genre>

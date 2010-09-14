@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Romantic comedy</title>
+	<description>Romantic comedy</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.7.2</sameAs>
+	<slug>romantic-comedy</slug>
+	<parent>/genres/amusement-entertainment/comedy/</parent>
+</genre>

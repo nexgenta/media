@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Ju-jitsu</title>
+	<description>Ju-jitsu</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.5.4</sameAs>
+	<slug>ju-jitsu</slug>
+	<parent>/genres/sports/martial-arts/</parent>
+</genre>

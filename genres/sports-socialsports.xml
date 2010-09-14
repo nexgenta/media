@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>'Social' sports</title>
+	<description>'Social' sports</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.9</sameAs>
+	<slug>social-sports</slug>
+	<parent>/genres/sports/</parent>
+</genre>

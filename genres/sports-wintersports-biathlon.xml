@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Biathlon</title>
+	<description>Biathlon</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7.21</sameAs>
+	<slug>biathlon</slug>
+	<parent>/genres/sports/winter-sports/</parent>
+</genre>

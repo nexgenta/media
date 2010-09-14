@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Nu Punk</title>
+	<description>Nu Punk</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.14.10</sameAs>
+	<slug>nu-punk</slug>
+	<parent>/genres/music/pop-rock/rock/</parent>
+</genre>

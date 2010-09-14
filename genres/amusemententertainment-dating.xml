@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Dating</title>
+	<description>Dating</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.12</sameAs>
+	<slug>dating</slug>
+	<parent>/genres/amusement-entertainment/</parent>
+</genre>

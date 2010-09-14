@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Easy listening / Exotica</title>
+	<description>Easy listening / Exotica</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.16</sameAs>
+	<slug>easy-listening-exotica</slug>
+	<parent>/genres/music/pop-rock/</parent>
+</genre>

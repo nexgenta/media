@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Fantasy/Fairy tale</title>
+	<description>Fantasy/Fairy tale</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.7</sameAs>
+	<slug>fantasy-fairy-tale</slug>
+	<parent>/genres/fiction-drama/</parent>
+</genre>

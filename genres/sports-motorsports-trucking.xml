@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Trucking</title>
+	<description>Trucking</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.8</sameAs>
+	<slug>trucking</slug>
+	<parent>/genres/sports/motor-sports/</parent>
+</genre>

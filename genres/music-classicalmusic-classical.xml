@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Classical</title>
+	<description>Classical</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.1.2</sameAs>
+	<slug>classical</slug>
+	<parent>/genres/music/classical-music/</parent>
+</genre>

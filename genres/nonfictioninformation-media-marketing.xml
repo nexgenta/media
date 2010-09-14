@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Marketing</title>
+	<description>Marketing</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.10.6</sameAs>
+	<slug>marketing</slug>
+	<parent>/genres/non-fiction-information/media/</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Space/Universe</title>
+	<description>Space/Universe</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6.5</sameAs>
+	<slug>space-universe</slug>
+	<parent>/genres/non-fiction-information/sciences/</parent>
+</genre>

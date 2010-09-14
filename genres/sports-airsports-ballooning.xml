@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Ballooning</title>
+	<description>Ballooning</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.14.1</sameAs>
+	<slug>ballooning</slug>
+	<parent>/genres/sports/air-sports/</parent>
+</genre>

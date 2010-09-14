@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Yatching</title>
+	<description>Yatching</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.6.2</sameAs>
+	<slug>yatching</slug>
+	<parent>/genres/sports/water-sports/</parent>
+</genre>

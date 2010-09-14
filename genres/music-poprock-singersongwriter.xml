@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Singer/Songwriter</title>
+	<description>Singer/Songwriter</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.17</sameAs>
+	<slug>singer-songwriter</slug>
+	<parent>/genres/music/pop-rock/</parent>
+</genre>

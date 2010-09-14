@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Handball</title>
+	<description>Handball</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.13</sameAs>
+	<slug>handball</slug>
+	<parent>/genres/sports/team-sports/</parent>
+</genre>

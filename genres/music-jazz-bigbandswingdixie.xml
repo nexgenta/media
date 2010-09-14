@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Big band/Swing/Dixie</title>
+	<description>Big band/Swing/Dixie</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.2</sameAs>
+	<slug>big-band-swing-dixie</slug>
+	<parent>/genres/music/jazz/</parent>
+</genre>

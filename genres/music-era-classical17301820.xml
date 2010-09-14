@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Classical (1730-1820)</title>
+	<description>Classical (1730-1820)</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.16.4</sameAs>
+	<slug>classical-1730-1820</slug>
+	<parent>/genres/music/era/</parent>
+</genre>

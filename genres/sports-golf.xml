@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Golf</title>
+	<description>Golf</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.15</sameAs>
+	<slug>golf</slug>
+	<parent>/genres/sports/</parent>
+</genre>

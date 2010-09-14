@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Dance hall</title>
+	<description>Dance hall</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.3.7</sameAs>
+	<slug>dance-hall</slug>
+	<parent>/genres/music/background-music/</parent>
+</genre>

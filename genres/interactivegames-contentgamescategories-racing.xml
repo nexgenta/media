@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Racing</title>
+	<description>Racing</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.1.8</sameAs>
+	<slug>racing</slug>
+	<parent>/genres/interactive-games/content-games-categories/</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Fine arts</title>
+	<description>Fine arts</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.4.9</sameAs>
+	<slug>fine-arts</slug>
+	<parent>/genres/non-fiction-information/arts/</parent>
+</genre>

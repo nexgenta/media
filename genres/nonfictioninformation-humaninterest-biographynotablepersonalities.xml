@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Biography/Notable personalities</title>
+	<description>Biography/Notable personalities</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.7.3</sameAs>
+	<slug>biography-notable-personalities</slug>
+	<parent>/genres/non-fiction-information/human-interest/</parent>
+</genre>

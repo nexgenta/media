@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Hill Climb</title>
+	<description>Hill Climb</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.11</sameAs>
+	<slug>hill-climb</slug>
+	<parent>/genres/sports/motor-sports/</parent>
+</genre>

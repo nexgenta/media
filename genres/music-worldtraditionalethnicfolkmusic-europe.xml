@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Europe</title>
+	<description>Europe</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.9.5</sameAs>
+	<slug>europe</slug>
+	<parent>/genres/music/world-traditional-ethnic-folk-music/</parent>
+</genre>

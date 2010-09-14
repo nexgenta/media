@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>String Quartet</title>
+	<description>String Quartet</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.1.18</sameAs>
+	<slug>string-quartet</slug>
+	<parent>/genres/music/classical-music/</parent>
+</genre>
