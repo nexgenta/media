@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Multi player TS networked services/games</title>
+	<description>Multi player TS networked services/games</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.2.10</sameAs>
+	<slug>multi-player-ts-networked-services-games</slug>
+	<parent>/interactive/intermittent-response</parent>
+</format>

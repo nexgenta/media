@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Text based gaming</title>
+	<description>Text based gaming</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.1.21</sameAs>
+	<slug>text-based-gaming</slug>
+	<parent>/interactive/local-interactivity</parent>
+</format>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Large ensemble performance</title>
+	<description>Large ensemble performance</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.5.3</sameAs>
+	<slug>large-ensemble-performance</slug>
+	<parent>/artistic-performance</parent>
+</format>

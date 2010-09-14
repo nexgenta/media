@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Level based quiz/game</title>
+	<description>Level based quiz/game</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.1.12</sameAs>
+	<slug>level-based-quiz-game</slug>
+	<parent>/interactive/local-interactivity</parent>
+</format>

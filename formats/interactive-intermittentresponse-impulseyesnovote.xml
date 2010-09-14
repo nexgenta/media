@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Impulse Yes/No vote</title>
+	<description>Impulse Yes/No vote</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.2.3</sameAs>
+	<slug>impulse-yes-no-vote</slug>
+	<parent>/interactive/intermittent-response</parent>
+</format>

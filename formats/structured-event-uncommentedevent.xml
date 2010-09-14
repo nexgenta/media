@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Uncommented event</title>
+	<description>Uncommented event</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.1.3.2</sameAs>
+	<slug>uncommented-event</slug>
+	<parent>/structured/event</parent>
+</format>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Computer</title>
+	<description>Computer</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.3.2</sameAs>
+	<slug>computer</slug>
+	<parent>/cartoon-animation-puppetry</parent>
+</format>

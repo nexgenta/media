@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <format>
-  <title>Structured</title>
-  <sameAs>urn:tva:metadata:cs:FormatCS:2010:2.1</sameAs>
-  <tag>structured</tag>
-  <description>All programmes dealing with facts, situations, opinions, theories and forecasts</description>
+	<title>STRUCTURED</title>
+	<description>STRUCTURED</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.1</sameAs>
+	<slug>structured</slug>
 </format>
-
