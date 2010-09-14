@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+  <title>Sciences</title>
+  <sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6</sameAs>
+  <parent>/genres/nonfiction</parent>
+  <tag>sciences</tag>
+</genre>
