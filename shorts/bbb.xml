@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<episode>
+  <created>2010-09-14T10:10:31Z</created>
+  <curie>bigbuckbunny.org:bbb</curie>
+  <title>Big Buck Bunny</title>
+  <description><![CDATA[
+A day of the life of Big Buck Bunny when he meets three bullying rodents, Frank, Rinky and Gamera. The rodents amuse themselves by harassing helpless creatures of the forest by throwing fruits, nuts and rocks at them. After the deaths of two of Bunny's favorite butterflies, and an offensive attack on Bunny himself, Bunny sets aside his gentle nature and orchestrates a complex plan for revenge.
+]]>
+</description>
+  <uri>http://www.bigbuckbunny.org/</uri>
+  <shortDescription>
+	A day in the life of Big Buck Bunny when he meets three bullying rodents.
+  </shortDescription>
+  <mediumDescription>
+	A day in the life of Big Buck Bunny when he meets three bullying rodents, Frank, Rinky and Gamera, who amuse themselves by harassing the helpless creatures of the forest.
+  </mediumDescription>
+  <image>/data/shorts/bbb-splash.png</image>
+  <format>/formats/cartoonpuppetry/computer</format>
+</episode>
