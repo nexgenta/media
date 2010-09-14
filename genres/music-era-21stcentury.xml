@@ -4,5 +4,5 @@
 	<description>21st Century</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.16.7</sameAs>
 	<slug>21st-century</slug>
-	<parent>/genres/music/era/</parent>
+	<parent>/music/era</parent>
 </genre>

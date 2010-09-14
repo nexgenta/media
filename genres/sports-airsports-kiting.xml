@@ -4,5 +4,5 @@
 	<description>Kiting</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.14.6</sameAs>
 	<slug>kiting</slug>
-	<parent>/genres/sports/air-sports/</parent>
+	<parent>/sports/air-sports</parent>
 </genre>

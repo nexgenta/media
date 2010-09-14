@@ -4,5 +4,5 @@
 	<description>Caribbean</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.9.4</sameAs>
 	<slug>caribbean</slug>
-	<parent>/genres/music/world-traditional-ethnic-folk-music/</parent>
+	<parent>/music/world-traditional-ethnic-folk-music</parent>
 </genre>

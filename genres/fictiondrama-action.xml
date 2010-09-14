@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Action</title>
-	<description>Action</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.6</sameAs>
-	<slug>action</slug>
-	<parent>/genres/fiction-drama/</parent>
-</genre>

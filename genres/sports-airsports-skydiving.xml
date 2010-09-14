@@ -4,5 +4,5 @@
 	<description>Sky diving</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.14.3</sameAs>
 	<slug>sky-diving</slug>
-	<parent>/genres/sports/air-sports/</parent>
+	<parent>/sports/air-sports</parent>
 </genre>

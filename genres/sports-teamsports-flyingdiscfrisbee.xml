@@ -4,5 +4,5 @@
 	<description>Flying Disc/ Frisbee</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.24</sameAs>
 	<slug>flying-disc-frisbee</slug>
-	<parent>/genres/sports/team-sports/</parent>
+	<parent>/sports/team-sports</parent>
 </genre>

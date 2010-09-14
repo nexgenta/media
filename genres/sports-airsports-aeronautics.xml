@@ -4,5 +4,5 @@
 	<description>Aeronautics</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.14.7</sameAs>
 	<slug>aeronautics</slug>
-	<parent>/genres/sports/air-sports/</parent>
+	<parent>/sports/air-sports</parent>
 </genre>

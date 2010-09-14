@@ -4,5 +4,5 @@
 	<description>Pop jazz/Jazz funk</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.9</sameAs>
 	<slug>pop-jazz-jazz-funk</slug>
-	<parent>/genres/music/jazz/</parent>
+	<parent>/music/jazz</parent>
 </genre>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Film</title>
-	<description>Film</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.1.10.3</sameAs>
-	<slug>film</slug>
-	<parent>/genres/non-fiction-information/news/cultural/</parent>
-</genre>

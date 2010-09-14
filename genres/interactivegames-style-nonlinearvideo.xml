@@ -4,5 +4,5 @@
 	<description>Non-linear video</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.2.7</sameAs>
 	<slug>non-linear-video</slug>
-	<parent>/genres/interactive-games/style/</parent>
+	<parent>/interactive-games/style</parent>
 </genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Contemporary drama</title>
+	<description>Contemporary drama</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.15</sameAs>
+	<slug>contemporary-drama</slug>
+	<parent>/drama</parent>
+</genre>

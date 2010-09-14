@@ -4,5 +4,5 @@
 	<description>Motor boating</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.2</sameAs>
 	<slug>motor-boating</slug>
-	<parent>/genres/sports/motor-sports/</parent>
+	<parent>/sports/motor-sports</parent>
 </genre>

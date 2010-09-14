@@ -4,5 +4,5 @@
 	<description>Casting</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.18</sameAs>
 	<slug>casting</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

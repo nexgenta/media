@@ -4,5 +4,5 @@
 	<description>Adventure sports</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.12</sameAs>
 	<slug>adventure-sports</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

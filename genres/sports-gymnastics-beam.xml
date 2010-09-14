@@ -4,5 +4,5 @@
 	<description>Beam</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.10.2</sameAs>
 	<slug>beam</slug>
-	<parent>/genres/sports/gymnastics/</parent>
+	<parent>/sports/gymnastics</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Tractor pulling</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.9</sameAs>
 	<slug>tractor-pulling</slug>
-	<parent>/genres/sports/motor-sports/</parent>
+	<parent>/sports/motor-sports</parent>
 </genre>

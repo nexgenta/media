@@ -4,5 +4,5 @@
 	<description>Dance</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.14</sameAs>
 	<slug>dance</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

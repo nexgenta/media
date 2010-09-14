@@ -4,5 +4,5 @@
 	<description>Extreme sports</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.12.2</sameAs>
 	<slug>extreme-sports</slug>
-	<parent>/genres/sports/adventure-sports/</parent>
+	<parent>/sports/adventure-sports</parent>
 </genre>

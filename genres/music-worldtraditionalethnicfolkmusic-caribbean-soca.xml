@@ -4,5 +4,5 @@
 	<description>SOCA</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.9.4.2</sameAs>
 	<slug>soca</slug>
-	<parent>/genres/music/world-traditional-ethnic-folk-music/caribbean/</parent>
+	<parent>/music/world-traditional-ethnic-folk-music/caribbean</parent>
 </genre>

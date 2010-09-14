@@ -4,5 +4,5 @@
 	<description>Japanese pop-rock</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.12</sameAs>
 	<slug>japanese-pop-rock</slug>
-	<parent>/genres/music/pop-rock/</parent>
+	<parent>/music/pop-rock</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Pop-rock</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4</sameAs>
 	<slug>pop-rock</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

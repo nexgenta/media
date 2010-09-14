@@ -4,5 +4,5 @@
 	<description>Skibob</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7.7</sameAs>
 	<slug>skibob</slug>
-	<parent>/genres/sports/winter-sports/</parent>
+	<parent>/sports/winter-sports</parent>
 </genre>

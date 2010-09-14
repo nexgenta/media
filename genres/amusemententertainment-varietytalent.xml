@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Variety/Talent</title>
-	<description>Variety/Talent</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.3</sameAs>
-	<slug>variety-talent</slug>
-	<parent>/genres/amusement-entertainment/</parent>
-</genre>

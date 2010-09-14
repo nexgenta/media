@@ -4,5 +4,5 @@
 	<description>Gliding</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.14.8</sameAs>
 	<slug>gliding</slug>
-	<parent>/genres/sports/air-sports/</parent>
+	<parent>/sports/air-sports</parent>
 </genre>

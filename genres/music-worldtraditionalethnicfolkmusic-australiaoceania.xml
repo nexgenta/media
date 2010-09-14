@@ -4,5 +4,5 @@
 	<description>Australia/Oceania</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.9.3</sameAs>
 	<slug>australia-oceania</slug>
-	<parent>/genres/music/world-traditional-ethnic-folk-music/</parent>
+	<parent>/music/world-traditional-ethnic-folk-music</parent>
 </genre>

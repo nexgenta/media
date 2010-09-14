@@ -4,5 +4,5 @@
 	<description>Love songs</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.3.6</sameAs>
 	<slug>love-songs</slug>
-	<parent>/genres/music/background-music/</parent>
+	<parent>/music/background-music</parent>
 </genre>

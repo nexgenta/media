@@ -4,5 +4,5 @@
 	<description>Ballet</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.14.1</sameAs>
 	<slug>ballet</slug>
-	<parent>/genres/music/dance/</parent>
+	<parent>/music/dance</parent>
 </genre>

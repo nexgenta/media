@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Computer Games</title>
+	<description>Computer Games</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.2.2</sameAs>
+	<slug>computer-games</slug>
+	<parent>/lifestyle/computing-technology</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Investigative journalism</title>
+	<description>Investigative journalism</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.7.5</sameAs>
+	<slug>investigative-journalism</slug>
+	<parent>/factual/human-interest</parent>
+</genre>

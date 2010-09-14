@@ -4,5 +4,5 @@
 	<description>Renaissance</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.1.7</sameAs>
 	<slug>renaissance</slug>
-	<parent>/genres/music/classical-music/</parent>
+	<parent>/music/classical-music</parent>
 </genre>

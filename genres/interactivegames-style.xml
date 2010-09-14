@@ -4,5 +4,5 @@
 	<description>STYLE</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.2</sameAs>
 	<slug>style</slug>
-	<parent>/genres/interactive-games/</parent>
+	<parent>/interactive-games</parent>
 </genre>

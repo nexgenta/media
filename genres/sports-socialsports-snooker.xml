@@ -4,5 +4,5 @@
 	<description>Snooker</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.9.8</sameAs>
 	<slug>snooker</slug>
-	<parent>/genres/sports/social-sports/</parent>
+	<parent>/sports/social-sports</parent>
 </genre>

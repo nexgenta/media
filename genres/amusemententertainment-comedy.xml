@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Comedy</title>
-	<description>Comedy</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.7</sameAs>
-	<slug>comedy</slug>
-	<parent>/genres/amusement-entertainment/</parent>
-</genre>

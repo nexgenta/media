@@ -4,5 +4,5 @@
 	<description>Asymmetric bars</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.10.1</sameAs>
 	<slug>asymmetric-bars</slug>
-	<parent>/genres/sports/gymnastics/</parent>
+	<parent>/sports/gymnastics</parent>
 </genre>

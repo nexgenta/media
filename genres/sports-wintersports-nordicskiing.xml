@@ -4,5 +4,5 @@
 	<description>Nordic skiing</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7.14</sameAs>
 	<slug>nordic-skiing</slug>
-	<parent>/genres/sports/winter-sports/</parent>
+	<parent>/sports/winter-sports</parent>
 </genre>

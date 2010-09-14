@@ -4,5 +4,5 @@
 	<description>Rap/Hip Hop/Reggae</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.7</sameAs>
 	<slug>rap-hip-hop-reggae</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

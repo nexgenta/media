@@ -4,5 +4,5 @@
 	<description>Rave</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.8.5</sameAs>
 	<slug>rave</slug>
-	<parent>/genres/music/electronic-club-urban-dance/</parent>
+	<parent>/music/electronic-club-urban-dance</parent>
 </genre>

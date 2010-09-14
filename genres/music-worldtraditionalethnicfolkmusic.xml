@@ -4,5 +4,5 @@
 	<description>World/Traditional/Ethnic/Folk music</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.9</sameAs>
 	<slug>world-traditional-ethnic-folk-music</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

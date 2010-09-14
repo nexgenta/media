@@ -4,5 +4,5 @@
 	<description>'Social' sports</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.9</sameAs>
 	<slug>social-sports</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

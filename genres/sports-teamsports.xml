@@ -4,5 +4,5 @@
 	<description>Team sports</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3</sameAs>
 	<slug>team-sports</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

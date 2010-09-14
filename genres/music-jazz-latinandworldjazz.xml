@@ -4,5 +4,5 @@
 	<description>Latin and World jazz</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.8</sameAs>
 	<slug>latin-and-world-jazz</slug>
-	<parent>/genres/music/jazz/</parent>
+	<parent>/music/jazz</parent>
 </genre>

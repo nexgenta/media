@@ -4,5 +4,5 @@
 	<description>Wrestling</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.13.6</sameAs>
 	<slug>wrestling</slug>
-	<parent>/genres/sports/strength-based-sports/</parent>
+	<parent>/sports/strength-based-sports</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Delta-plane</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.14.4</sameAs>
 	<slug>delta-plane</slug>
-	<parent>/genres/sports/air-sports/</parent>
+	<parent>/sports/air-sports</parent>
 </genre>

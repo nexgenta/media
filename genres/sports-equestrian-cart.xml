@@ -4,5 +4,5 @@
 	<description>Cart</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.11.1</sameAs>
 	<slug>cart</slug>
-	<parent>/genres/sports/equestrian/</parent>
+	<parent>/sports/equestrian</parent>
 </genre>

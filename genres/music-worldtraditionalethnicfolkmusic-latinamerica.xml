@@ -4,5 +4,5 @@
 	<description>Latin America</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.9.6</sameAs>
 	<slug>latin-america</slug>
-	<parent>/genres/music/world-traditional-ethnic-folk-music/</parent>
+	<parent>/music/world-traditional-ethnic-folk-music</parent>
 </genre>

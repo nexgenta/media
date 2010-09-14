@@ -4,5 +4,5 @@
 	<description>2040s</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.16.7.5</sameAs>
 	<slug>2040s</slug>
-	<parent>/genres/music/era/21st-century/</parent>
+	<parent>/music/era/21st-century</parent>
 </genre>

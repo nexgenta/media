@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>State</title>
-	<description>State</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.9.7</sameAs>
-	<slug>state</slug>
-	<parent>/genres/non-fiction-information/events/</parent>
-</genre>

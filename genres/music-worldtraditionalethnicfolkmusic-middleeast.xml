@@ -4,5 +4,5 @@
 	<description>Middle East</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.9.7</sameAs>
 	<slug>middle-east</slug>
-	<parent>/genres/music/world-traditional-ethnic-folk-music/</parent>
+	<parent>/music/world-traditional-ethnic-folk-music</parent>
 </genre>

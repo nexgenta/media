@@ -4,5 +4,5 @@
 	<description>Basque pelote</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.9.11</sameAs>
 	<slug>basque-pelote</slug>
-	<parent>/genres/sports/social-sports/</parent>
+	<parent>/sports/social-sports</parent>
 </genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Television</title>
+	<description>Television</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.10.3</sameAs>
+	<slug>television</slug>
+	<parent>/factual/media</parent>
+</genre>

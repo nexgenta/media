@@ -4,5 +4,5 @@
 	<description>New Orleans/Early jazz</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.1</sameAs>
 	<slug>new-orleans-early-jazz</slug>
-	<parent>/genres/music/jazz/</parent>
+	<parent>/music/jazz</parent>
 </genre>

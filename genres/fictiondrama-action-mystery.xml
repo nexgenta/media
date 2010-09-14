@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Mystery</title>
-	<description>Mystery</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.6.3</sameAs>
-	<slug>mystery</slug>
-	<parent>/genres/fiction-drama/action/</parent>
-</genre>

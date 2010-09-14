@@ -4,5 +4,5 @@
 	<description>Water sports</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.6</sameAs>
 	<slug>water-sports</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

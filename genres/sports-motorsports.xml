@@ -4,5 +4,5 @@
 	<description>Motor sports</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8</sameAs>
 	<slug>motor-sports</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

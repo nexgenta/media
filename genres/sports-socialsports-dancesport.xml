@@ -4,5 +4,5 @@
 	<description>Dance sport</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.9.5</sameAs>
 	<slug>dance-sport</slug>
-	<parent>/genres/sports/social-sports/</parent>
+	<parent>/sports/social-sports</parent>
 </genre>

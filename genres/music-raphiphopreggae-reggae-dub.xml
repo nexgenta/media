@@ -4,5 +4,5 @@
 	<description>Dub</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.7.3.2</sameAs>
 	<slug>dub</slug>
-	<parent>/genres/music/rap-hip-hop-reggae/reggae/</parent>
+	<parent>/music/rap-hip-hop-reggae/reggae</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Badminton</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.4.1</sameAs>
 	<slug>badminton</slug>
-	<parent>/genres/sports/racket-sports/</parent>
+	<parent>/sports/racket-sports</parent>
 </genre>

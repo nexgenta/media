@@ -4,5 +4,5 @@
 	<description>Event music</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.12</sameAs>
 	<slug>event-music</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

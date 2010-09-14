@@ -4,5 +4,5 @@
 	<description>Rhythm and Blues</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.5.5</sameAs>
 	<slug>rhythm-and-blues</slug>
-	<parent>/genres/music/blues-rhythm-and-blues-soul-gospel/</parent>
+	<parent>/music/blues-rhythm-and-blues-soul-gospel</parent>
 </genre>

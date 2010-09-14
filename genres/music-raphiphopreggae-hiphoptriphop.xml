@@ -4,5 +4,5 @@
 	<description>Hip Hop/Trip-Hop</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.7.2</sameAs>
 	<slug>hip-hop-trip-hop</slug>
-	<parent>/genres/music/rap-hip-hop-reggae/</parent>
+	<parent>/music/rap-hip-hop-reggae</parent>
 </genre>

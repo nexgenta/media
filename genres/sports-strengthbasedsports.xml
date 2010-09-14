@@ -4,5 +4,5 @@
 	<description>Strength-based sports</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.13</sameAs>
 	<slug>strength-based-sports</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

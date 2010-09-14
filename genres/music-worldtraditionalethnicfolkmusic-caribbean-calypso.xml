@@ -4,5 +4,5 @@
 	<description>Calypso</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.9.4.1</sameAs>
 	<slug>calypso</slug>
-	<parent>/genres/music/world-traditional-ethnic-folk-music/caribbean/</parent>
+	<parent>/music/world-traditional-ethnic-folk-music/caribbean</parent>
 </genre>

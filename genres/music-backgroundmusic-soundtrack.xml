@@ -4,5 +4,5 @@
 	<description>Soundtrack</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.3.8</sameAs>
 	<slug>soundtrack</slug>
-	<parent>/genres/music/background-music/</parent>
+	<parent>/music/background-music</parent>
 </genre>

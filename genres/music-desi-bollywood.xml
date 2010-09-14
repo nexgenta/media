@@ -4,5 +4,5 @@
 	<description>Bollywood</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.17.3</sameAs>
 	<slug>bollywood</slug>
-	<parent>/genres/music/desi/</parent>
+	<parent>/music/desi</parent>
 </genre>

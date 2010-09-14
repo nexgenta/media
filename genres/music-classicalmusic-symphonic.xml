@@ -4,5 +4,5 @@
 	<description>Symphonic</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.1.12</sameAs>
 	<slug>symphonic</slug>
-	<parent>/genres/music/classical-music/</parent>
+	<parent>/music/classical-music</parent>
 </genre>

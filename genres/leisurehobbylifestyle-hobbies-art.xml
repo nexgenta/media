@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Art</title>
-	<description>Art</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.5.4</sameAs>
-	<slug>art</slug>
-	<parent>/genres/leisure-hobby-lifestyle/hobbies/</parent>
-</genre>

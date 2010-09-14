@@ -4,5 +4,5 @@
 	<description>Combined athletics</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.1.3</sameAs>
 	<slug>combined-athletics</slug>
-	<parent>/genres/sports/athletics/</parent>
+	<parent>/sports/athletics</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Modern/Avant-garde/Free</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.7</sameAs>
 	<slug>modern-avant-garde-free</slug>
-	<parent>/genres/music/jazz/</parent>
+	<parent>/music/jazz</parent>
 </genre>

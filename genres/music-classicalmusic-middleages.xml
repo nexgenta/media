@@ -4,5 +4,5 @@
 	<description>Middle Ages</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.1.6</sameAs>
 	<slug>middle-ages</slug>
-	<parent>/genres/music/classical-music/</parent>
+	<parent>/music/classical-music</parent>
 </genre>

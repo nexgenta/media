@@ -4,5 +4,5 @@
 	<description>Cross-country</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.1.5</sameAs>
 	<slug>cross-country</slug>
-	<parent>/genres/sports/athletics/</parent>
+	<parent>/sports/athletics</parent>
 </genre>

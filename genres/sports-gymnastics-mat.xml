@@ -4,5 +4,5 @@
 	<description>Mat</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.10.4</sameAs>
 	<slug>mat</slug>
-	<parent>/genres/sports/gymnastics/</parent>
+	<parent>/sports/gymnastics</parent>
 </genre>

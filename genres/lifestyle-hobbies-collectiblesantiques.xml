@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Collectibles/Antiques</title>
+	<description>Collectibles/Antiques</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.5.10</sameAs>
+	<slug>collectibles-antiques</slug>
+	<parent>/lifestyle/hobbies</parent>
+</genre>

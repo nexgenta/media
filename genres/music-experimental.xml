@@ -4,5 +4,5 @@
 	<description>Experimental</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.18</sameAs>
 	<slug>experimental</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

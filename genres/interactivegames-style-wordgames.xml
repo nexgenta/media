@@ -4,5 +4,5 @@
 	<description>Word games</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.2.2</sameAs>
 	<slug>word-games</slug>
-	<parent>/genres/interactive-games/style/</parent>
+	<parent>/interactive-games/style</parent>
 </genre>

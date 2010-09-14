@@ -4,5 +4,5 @@
 	<description>Prog / Symphonic Rock</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.14.5</sameAs>
 	<slug>prog-symphonic-rock</slug>
-	<parent>/genres/music/pop-rock/rock/</parent>
+	<parent>/music/pop-rock/rock</parent>
 </genre>

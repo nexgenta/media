@@ -4,5 +4,5 @@
 	<description>Spoken</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.13</sameAs>
 	<slug>spoken</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

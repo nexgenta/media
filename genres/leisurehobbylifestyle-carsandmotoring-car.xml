@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Car</title>
-	<description>Car</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.6.1</sameAs>
-	<slug>car</slug>
-	<parent>/genres/leisure-hobby-lifestyle/cars-and-motoring/</parent>
-</genre>

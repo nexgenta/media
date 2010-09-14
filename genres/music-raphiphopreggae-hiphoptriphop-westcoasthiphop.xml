@@ -4,5 +4,5 @@
 	<description>West Coast Hip Hop</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.7.2.5</sameAs>
 	<slug>west-coast-hip-hop</slug>
-	<parent>/genres/music/rap-hip-hop-reggae/hip-hop-trip-hop/</parent>
+	<parent>/music/rap-hip-hop-reggae/hip-hop-trip-hop</parent>
 </genre>

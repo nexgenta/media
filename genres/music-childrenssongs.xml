@@ -4,5 +4,5 @@
 	<description>Children's songs</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.11</sameAs>
 	<slug>children-s-songs</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

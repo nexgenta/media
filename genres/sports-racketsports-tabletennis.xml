@@ -4,5 +4,5 @@
 	<description>Table tennis</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.4.6</sameAs>
 	<slug>table-tennis</slug>
-	<parent>/genres/sports/racket-sports/</parent>
+	<parent>/sports/racket-sports</parent>
 </genre>

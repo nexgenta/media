@@ -4,5 +4,5 @@
 	<description>Rowing</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.6.7</sameAs>
 	<slug>rowing</slug>
-	<parent>/genres/sports/water-sports/</parent>
+	<parent>/sports/water-sports</parent>
 </genre>

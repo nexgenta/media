@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Humour</title>
+	<description>Humour</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.7.6</sameAs>
+	<slug>humour</slug>
+	<parent>/entertainment/comedy</parent>
+</genre>

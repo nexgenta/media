@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Soap talk</title>
-	<description>Soap talk</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.2.3</sameAs>
-	<slug>soap-talk</slug>
-	<parent>/genres/fiction-drama/soap/</parent>
-</genre>

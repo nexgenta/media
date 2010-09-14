@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Public affairs</title>
-	<description>Public affairs</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.1.15</sameAs>
-	<slug>public-affairs</slug>
-	<parent>/genres/non-fiction-information/news/</parent>
-</genre>

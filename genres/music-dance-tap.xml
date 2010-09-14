@@ -4,5 +4,5 @@
 	<description>Tap</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.14.2</sameAs>
 	<slug>tap</slug>
-	<parent>/genres/music/dance/</parent>
+	<parent>/music/dance</parent>
 </genre>

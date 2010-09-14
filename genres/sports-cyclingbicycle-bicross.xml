@@ -4,5 +4,5 @@
 	<description>Bicross</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.2.2</sameAs>
 	<slug>bicross</slug>
-	<parent>/genres/sports/cycling-bicycle/</parent>
+	<parent>/sports/cycling-bicycle</parent>
 </genre>

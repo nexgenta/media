@@ -4,5 +4,5 @@
 	<description>Sound clip</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.3.14</sameAs>
 	<slug>sound-clip</slug>
-	<parent>/genres/music/background-music/</parent>
+	<parent>/music/background-music</parent>
 </genre>

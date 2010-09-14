@@ -4,5 +4,5 @@
 	<description>Electronic/Club/Urban/Dance</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.8</sameAs>
 	<slug>electronic-club-urban-dance</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Impressionists</title>
+	<description>Impressionists</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.7.9</sameAs>
+	<slug>impressionists</slug>
+	<parent>/entertainment/comedy</parent>
+</genre>

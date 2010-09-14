@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>History</title>
-	<description>History</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.5.3</sameAs>
-	<slug>history</slug>
-	<parent>/genres/non-fiction-information/humanities/</parent>
-</genre>

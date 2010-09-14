@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Personal health</title>
-	<description>Personal health</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.7.2</sameAs>
-	<slug>personal-health</slug>
-	<parent>/genres/leisure-hobby-lifestyle/personal-lifestyle-family/</parent>
-</genre>

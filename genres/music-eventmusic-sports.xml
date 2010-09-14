@@ -4,5 +4,5 @@
 	<description>Sports</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.12.2</sameAs>
 	<slug>sports</slug>
-	<parent>/genres/music/event-music/</parent>
+	<parent>/music/event-music</parent>
 </genre>

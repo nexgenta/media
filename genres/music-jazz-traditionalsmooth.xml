@@ -4,5 +4,5 @@
 	<description>Traditional/Smooth</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.5</sameAs>
 	<slug>traditional-smooth</slug>
-	<parent>/genres/music/jazz/</parent>
+	<parent>/music/jazz</parent>
 </genre>

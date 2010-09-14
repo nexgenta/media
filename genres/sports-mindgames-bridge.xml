@@ -4,5 +4,5 @@
 	<description>Bridge</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.22.1</sameAs>
 	<slug>bridge</slug>
-	<parent>/genres/sports/mind-games/</parent>
+	<parent>/sports/mind-games</parent>
 </genre>

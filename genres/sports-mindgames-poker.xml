@@ -4,5 +4,5 @@
 	<description>Poker</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.22.3</sameAs>
 	<slug>poker</slug>
-	<parent>/genres/sports/mind-games/</parent>
+	<parent>/sports/mind-games</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Modern</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.14.3</sameAs>
 	<slug>modern</slug>
-	<parent>/genres/music/dance/</parent>
+	<parent>/music/dance</parent>
 </genre>

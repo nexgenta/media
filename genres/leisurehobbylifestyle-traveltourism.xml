@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Travel/Tourism</title>
-	<description>Travel/Tourism</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.9</sameAs>
-	<slug>travel-tourism</slug>
-	<parent>/genres/leisure-hobby-lifestyle/</parent>
-</genre>

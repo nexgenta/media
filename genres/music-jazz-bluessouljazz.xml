@@ -4,5 +4,5 @@
 	<description>Blues/Soul jazz</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.3</sameAs>
 	<slug>blues-soul-jazz</slug>
-	<parent>/genres/music/jazz/</parent>
+	<parent>/music/jazz</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Techno/Euro-Techno/Techno-Industrial/Industrial</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.8.3</sameAs>
 	<slug>techno-euro-techno-techno-industrial-industrial</slug>
-	<parent>/genres/music/electronic-club-urban-dance/</parent>
+	<parent>/music/electronic-club-urban-dance</parent>
 </genre>

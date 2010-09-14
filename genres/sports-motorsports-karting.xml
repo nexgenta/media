@@ -4,5 +4,5 @@
 	<description>Karting</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.6</sameAs>
 	<slug>karting</slug>
-	<parent>/genres/sports/motor-sports/</parent>
+	<parent>/sports/motor-sports</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Simulation</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.1.9</sameAs>
 	<slug>simulation</slug>
-	<parent>/genres/interactive-games/content-games-categories/</parent>
+	<parent>/interactive-games/content-games-categories</parent>
 </genre>

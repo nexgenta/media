@@ -4,5 +4,5 @@
 	<description>Country and Western</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.6</sameAs>
 	<slug>country-and-western</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

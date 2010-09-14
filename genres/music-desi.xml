@@ -4,5 +4,5 @@
 	<description>Desi</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.17</sameAs>
 	<slug>desi</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

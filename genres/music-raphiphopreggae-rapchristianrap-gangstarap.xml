@@ -4,5 +4,5 @@
 	<description>Gangsta Rap</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.7.1.1</sameAs>
 	<slug>gangsta-rap</slug>
-	<parent>/genres/music/rap-hip-hop-reggae/rap-christian-rap/</parent>
+	<parent>/music/rap-hip-hop-reggae/rap-christian-rap</parent>
 </genre>

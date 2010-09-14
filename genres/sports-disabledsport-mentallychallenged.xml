@@ -4,5 +4,5 @@
 	<description>Mentally Challenged</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.24.2</sameAs>
 	<slug>mentally-challenged</slug>
-	<parent>/genres/sports/disabled-sport/</parent>
+	<parent>/sports/disabled-sport</parent>
 </genre>

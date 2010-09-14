@@ -4,5 +4,5 @@
 	<description>Classic/Retro</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.1.13</sameAs>
 	<slug>classic-retro</slug>
-	<parent>/genres/interactive-games/content-games-categories/</parent>
+	<parent>/interactive-games/content-games-categories</parent>
 </genre>

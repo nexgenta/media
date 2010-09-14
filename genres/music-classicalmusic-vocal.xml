@@ -4,5 +4,5 @@
 	<description>Vocal</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.1.13</sameAs>
 	<slug>vocal</slug>
-	<parent>/genres/music/classical-music/</parent>
+	<parent>/music/classical-music</parent>
 </genre>

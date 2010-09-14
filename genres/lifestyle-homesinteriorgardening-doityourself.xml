@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Do-it-yourself</title>
+	<description>Do-it-yourself</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.4.1</sameAs>
+	<slug>do-it-yourself</slug>
+	<parent>/lifestyle/homes-interior-gardening</parent>
+</genre>

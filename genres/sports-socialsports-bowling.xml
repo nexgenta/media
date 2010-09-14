@@ -4,5 +4,5 @@
 	<description>Bowling</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.9.3</sameAs>
 	<slug>bowling</slug>
-	<parent>/genres/sports/social-sports/</parent>
+	<parent>/sports/social-sports</parent>
 </genre>

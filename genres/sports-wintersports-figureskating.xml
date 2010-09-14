@@ -4,5 +4,5 @@
 	<description>Figure skating</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7.17</sameAs>
 	<slug>figure-skating</slug>
-	<parent>/genres/sports/winter-sports/</parent>
+	<parent>/sports/winter-sports</parent>
 </genre>

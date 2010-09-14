@@ -4,5 +4,5 @@
 	<description>Singer/Songwriter</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.17</sameAs>
 	<slug>singer-songwriter</slug>
-	<parent>/genres/music/pop-rock/</parent>
+	<parent>/music/pop-rock</parent>
 </genre>

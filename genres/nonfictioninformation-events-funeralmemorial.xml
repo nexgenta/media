@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Funeral/Memorial</title>
-	<description>Funeral/Memorial</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.9.15</sameAs>
-	<slug>funeral-memorial</slug>
-	<parent>/genres/non-fiction-information/events/</parent>
-</genre>

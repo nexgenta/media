@@ -4,5 +4,5 @@
 	<description>CONTENT GAMES CATEGORIES</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.1</sameAs>
 	<slug>content-games-categories</slug>
-	<parent>/genres/interactive-games/</parent>
+	<parent>/interactive-games</parent>
 </genre>

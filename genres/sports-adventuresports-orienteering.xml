@@ -4,5 +4,5 @@
 	<description>Orienteering</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.12.5</sameAs>
 	<slug>orienteering</slug>
-	<parent>/genres/sports/adventure-sports/</parent>
+	<parent>/sports/adventure-sports</parent>
 </genre>

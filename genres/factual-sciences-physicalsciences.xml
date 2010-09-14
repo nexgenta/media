@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Physical sciences</title>
+	<description>Physical sciences</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6.6</sameAs>
+	<slug>physical-sciences</slug>
+	<parent>/factual/sciences</parent>
+</genre>

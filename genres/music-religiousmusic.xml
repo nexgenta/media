@@ -4,5 +4,5 @@
 	<description>Religious music</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.15</sameAs>
 	<slug>religious-music</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

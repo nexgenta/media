@@ -4,5 +4,5 @@
 	<description>Ska</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.7.3.6</sameAs>
 	<slug>ska</slug>
-	<parent>/genres/music/rap-hip-hop-reggae/reggae/</parent>
+	<parent>/music/rap-hip-hop-reggae/reggae</parent>
 </genre>

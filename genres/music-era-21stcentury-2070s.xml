@@ -4,5 +4,5 @@
 	<description>2070s</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.16.7.8</sameAs>
 	<slug>2070s</slug>
-	<parent>/genres/music/era/21st-century/</parent>
+	<parent>/music/era/21st-century</parent>
 </genre>

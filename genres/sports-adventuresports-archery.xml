@@ -4,5 +4,5 @@
 	<description>Archery</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.12.1</sameAs>
 	<slug>archery</slug>
-	<parent>/genres/sports/adventure-sports/</parent>
+	<parent>/sports/adventure-sports</parent>
 </genre>

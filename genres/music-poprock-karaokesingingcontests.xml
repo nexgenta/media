@@ -4,5 +4,5 @@
 	<description>Karaoke/Singing contests</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.13</sameAs>
 	<slug>karaoke-singing-contests</slug>
-	<parent>/genres/music/pop-rock/</parent>
+	<parent>/music/pop-rock</parent>
 </genre>

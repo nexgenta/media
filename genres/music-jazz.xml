@@ -4,5 +4,5 @@
 	<description>Jazz</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2</sameAs>
 	<slug>jazz</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

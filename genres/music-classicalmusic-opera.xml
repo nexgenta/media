@@ -4,5 +4,5 @@
 	<description>Opera</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.1.9</sameAs>
 	<slug>opera</slug>
-	<parent>/genres/music/classical-music/</parent>
+	<parent>/music/classical-music</parent>
 </genre>

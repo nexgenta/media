@@ -4,5 +4,5 @@
 	<description>Acid jazz/Fusion</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.10</sameAs>
 	<slug>acid-jazz-fusion</slug>
-	<parent>/genres/music/jazz/</parent>
+	<parent>/music/jazz</parent>
 </genre>

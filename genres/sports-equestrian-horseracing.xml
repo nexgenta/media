@@ -4,5 +4,5 @@
 	<description>Horse racing</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.11.3</sameAs>
 	<slug>horse-racing</slug>
-	<parent>/genres/sports/equestrian/</parent>
+	<parent>/sports/equestrian</parent>
 </genre>

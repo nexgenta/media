@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Showbiz</title>
-	<description>Showbiz</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.4.12</sameAs>
-	<slug>showbiz</slug>
-	<parent>/genres/non-fiction-information/arts/</parent>
-</genre>

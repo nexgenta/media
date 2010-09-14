@@ -4,5 +4,5 @@
 	<description>Blues/Rhythm and Blues/Soul/Gospel</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.5</sameAs>
 	<slug>blues-rhythm-and-blues-soul-gospel</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

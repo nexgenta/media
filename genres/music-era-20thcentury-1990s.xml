@@ -4,5 +4,5 @@
 	<description>1990s</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.16.6.9</sameAs>
 	<slug>1990s</slug>
-	<parent>/genres/music/era/20th-century/</parent>
+	<parent>/music/era/20th-century</parent>
 </genre>

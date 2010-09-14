@@ -4,5 +4,5 @@
 	<description>Wedding</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.12.1</sameAs>
 	<slug>wedding</slug>
-	<parent>/genres/music/event-music/</parent>
+	<parent>/music/event-music</parent>
 </genre>

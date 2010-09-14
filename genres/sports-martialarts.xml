@@ -4,5 +4,5 @@
 	<description>Martial Arts</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.5</sameAs>
 	<slug>martial-arts</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

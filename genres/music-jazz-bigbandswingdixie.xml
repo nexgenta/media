@@ -4,5 +4,5 @@
 	<description>Big band/Swing/Dixie</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.2</sameAs>
 	<slug>big-band-swing-dixie</slug>
-	<parent>/genres/music/jazz/</parent>
+	<parent>/music/jazz</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Romantic (1815-1910</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.16.5</sameAs>
 	<slug>romantic-1815-1910</slug>
-	<parent>/genres/music/era/</parent>
+	<parent>/music/era</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Puzzle</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.1.6</sameAs>
 	<slug>puzzle</slug>
-	<parent>/genres/interactive-games/content-games-categories/</parent>
+	<parent>/interactive-games/content-games-categories</parent>
 </genre>

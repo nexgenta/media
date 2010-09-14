@@ -4,5 +4,5 @@
 	<description>Horse</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.10.3</sameAs>
 	<slug>horse</slug>
-	<parent>/genres/sports/gymnastics/</parent>
+	<parent>/sports/gymnastics</parent>
 </genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Personal stories</title>
+	<description>Personal stories</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.7.8</sameAs>
+	<slug>personal-stories</slug>
+	<parent>/factual/human-interest</parent>
+</genre>

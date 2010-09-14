@@ -4,5 +4,5 @@
 	<description>Traditional Games</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.23</sameAs>
 	<slug>traditional-games</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Hit-Chart/Song Requests</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.10</sameAs>
 	<slug>hit-chart-song-requests</slug>
-	<parent>/genres/music/</parent>
+	<parent>/music</parent>
 </genre>

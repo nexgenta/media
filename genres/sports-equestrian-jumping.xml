@@ -4,5 +4,5 @@
 	<description>Jumping</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.11.5</sameAs>
 	<slug>jumping</slug>
-	<parent>/genres/sports/equestrian/</parent>
+	<parent>/sports/equestrian</parent>
 </genre>

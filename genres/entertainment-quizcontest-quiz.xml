@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Quiz</title>
+	<description>Quiz</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.2.1</sameAs>
+	<slug>quiz</slug>
+	<parent>/entertainment/quiz-contest</parent>
+</genre>

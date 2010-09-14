@@ -4,5 +4,5 @@
 	<description>8 Bar</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.8.16.3</sameAs>
 	<slug>8-bar</slug>
-	<parent>/genres/music/electronic-club-urban-dance/uk-garage/</parent>
+	<parent>/music/electronic-club-urban-dance/uk-garage</parent>
 </genre>

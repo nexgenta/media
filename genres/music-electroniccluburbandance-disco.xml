@@ -4,5 +4,5 @@
 	<description>Disco</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.8.2</sameAs>
 	<slug>disco</slug>
-	<parent>/genres/music/electronic-club-urban-dance/</parent>
+	<parent>/music/electronic-club-urban-dance</parent>
 </genre>

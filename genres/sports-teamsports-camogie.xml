@@ -4,5 +4,5 @@
 	<description>Camogie</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.26</sameAs>
 	<slug>camogie</slug>
-	<parent>/genres/sports/team-sports/</parent>
+	<parent>/sports/team-sports</parent>
 </genre>

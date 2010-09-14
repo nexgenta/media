@@ -4,5 +4,5 @@
 	<description>Trampoline</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.10.7</sameAs>
 	<slug>trampoline</slug>
-	<parent>/genres/sports/gymnastics/</parent>
+	<parent>/sports/gymnastics</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Beach volley</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.22</sameAs>
 	<slug>beach-volley</slug>
-	<parent>/genres/sports/team-sports/</parent>
+	<parent>/sports/team-sports</parent>
 </genre>

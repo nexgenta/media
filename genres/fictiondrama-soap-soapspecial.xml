@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Soap special</title>
-	<description>Soap special</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.2.2</sameAs>
-	<slug>soap-special</slug>
-	<parent>/genres/fiction-drama/soap/</parent>
-</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Fitness / Keep-fit</title>
+	<description>Fitness / Keep-fit</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.7.1</sameAs>
+	<slug>fitness-keep-fit</slug>
+	<parent>/lifestyle/personal-lifestyle-family</parent>
+</genre>

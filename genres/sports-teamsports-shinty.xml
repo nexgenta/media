@@ -4,5 +4,5 @@
 	<description>Shinty</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.27</sameAs>
 	<slug>shinty</slug>
-	<parent>/genres/sports/team-sports/</parent>
+	<parent>/sports/team-sports</parent>
 </genre>

@@ -4,5 +4,5 @@
 	<description>Formula 1</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.4</sameAs>
 	<slug>formula-1</slug>
-	<parent>/genres/sports/motor-sports/</parent>
+	<parent>/sports/motor-sports</parent>
 </genre>

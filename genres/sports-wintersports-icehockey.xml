@@ -4,5 +4,5 @@
 	<description>Ice-hockey</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7.3</sameAs>
 	<slug>ice-hockey</slug>
-	<parent>/genres/sports/winter-sports/</parent>
+	<parent>/sports/winter-sports</parent>
 </genre>

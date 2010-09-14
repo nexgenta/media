@@ -4,5 +4,5 @@
 	<description>Bhangra</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.17.2</sameAs>
 	<slug>bhangra</slug>
-	<parent>/genres/music/desi/</parent>
+	<parent>/music/desi</parent>
 </genre>

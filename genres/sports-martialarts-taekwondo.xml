@@ -4,5 +4,5 @@
 	<description>Taekwondo</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.5.8</sameAs>
 	<slug>taekwondo</slug>
-	<parent>/genres/sports/martial-arts/</parent>
+	<parent>/sports/martial-arts</parent>
 </genre>

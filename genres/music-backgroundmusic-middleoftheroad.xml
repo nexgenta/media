@@ -4,5 +4,5 @@
 	<description>Middle-of-the-road</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.3.1</sameAs>
 	<slug>middle-of-the-road</slug>
-	<parent>/genres/music/background-music/</parent>
+	<parent>/music/background-music</parent>
 </genre>

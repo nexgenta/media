@@ -4,5 +4,5 @@
 	<description>Field</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.1.1</sameAs>
 	<slug>field</slug>
-	<parent>/genres/sports/athletics/</parent>
+	<parent>/sports/athletics</parent>
 </genre>

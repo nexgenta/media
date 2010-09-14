@@ -4,5 +4,5 @@
 	<description>Auto racing</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.1</sameAs>
 	<slug>auto-racing</slug>
-	<parent>/genres/sports/motor-sports/</parent>
+	<parent>/sports/motor-sports</parent>
 </genre>

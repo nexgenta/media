@@ -4,5 +4,5 @@
 	<description>Racketball</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.4.2</sameAs>
 	<slug>racketball</slug>
-	<parent>/genres/sports/racket-sports/</parent>
+	<parent>/sports/racket-sports</parent>
 </genre>

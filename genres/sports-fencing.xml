@@ -4,5 +4,5 @@
 	<description>Fencing</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.16</sameAs>
 	<slug>fencing</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

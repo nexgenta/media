@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Listings</title>
-	<description>Listings</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.11</sameAs>
-	<slug>listings</slug>
-	<parent>/genres/non-fiction-information/</parent>
-</genre>

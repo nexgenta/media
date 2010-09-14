@@ -4,5 +4,5 @@
 	<description>Mind Games</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.22</sameAs>
 	<slug>mind-games</slug>
-	<parent>/genres/sports/</parent>
+	<parent>/sports</parent>
 </genre>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Holidays</title>
-	<description>Holidays</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.9.1</sameAs>
-	<slug>holidays</slug>
-	<parent>/genres/leisure-hobby-lifestyle/travel-tourism/</parent>
-</genre>

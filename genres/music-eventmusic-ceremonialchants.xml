@@ -4,5 +4,5 @@
 	<description>Ceremonial/Chants</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.12.3</sameAs>
 	<slug>ceremonial-chants</slug>
-	<parent>/genres/music/event-music/</parent>
+	<parent>/music/event-music</parent>
 </genre>

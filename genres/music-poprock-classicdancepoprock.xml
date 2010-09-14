@@ -4,5 +4,5 @@
 	<description>Classic/Dance/Pop-rock</description>
 	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.5</sameAs>
 	<slug>classic-dance-pop-rock</slug>
-	<parent>/genres/music/pop-rock/</parent>
+	<parent>/music/pop-rock</parent>
 </genre>
