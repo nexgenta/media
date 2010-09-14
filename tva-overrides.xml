@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<overrides>
+  <term>
+	<uri>urn:tva:metadata:cs:ContentCS:2010:3.1</uri>
+	<title>Factual</title>
+	<slug>factual</slug>
+	<description>Non-fiction/information</description>
+  </term>
+  <term>
+	<uri>urn:tva:metadata:cs:ContentCS:2010:3.1.3</uri>
+	<title>General</title>
+	<slug>general</slug>
+  </term>
+  <term>
+	<uri>urn:tva:metadata:cs:ContentCS:2010:3.4</uri>
+	<title>Drama</title>
+	<slug>drama</slug>
+	<description>Drama</description>
+  </term>
+  <term>
+	<uri>urn:tva:metadata:cs:ContentCS:2010:3.5</uri>
+	<title>Entertainment</title>
+	<slug>entertainment</slug>
+	<description>Entertainment</description>
+  </term>
+  <term>
+	<uri>urn:tva:metadata:cs:ContentCS:2010:3.8</uri>
+	<title>Lifestyle</title>
+	<slug>lifestyle</slug>
+	<description>Leisure, hobbies, and lifestyle</description>
+  </term>
+</overrides>
