@@ -8,5 +8,12 @@
 	<country>ALL</country>
   </publisher>
   <slug>hubblecast</slug>
+  <genre>/genres/nonfiction/sciences/space</genre>
+  <format>/formats/structured/documentary</format>
+  <topic>http://dbpedia.org/resource/Hubble_Space_Telescope</topic>
+  <description>Welcome to the Hubblecast! Hubblecast features news and images from the NASA/ESA Hubble Space Telescope.</description>
+   <mediumDescription>Hubblecast features news and images from the NASA/ESA Hubble Space Telescope.</mediumDescription>
+   <shortDescription>News and images from the NASA/ESA Hubble Space Telescope.</shortDescription>
+   <uri>http://www.spacetelescope.org/videos/hubblecast</uri>
 </show>
 
