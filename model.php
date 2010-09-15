@@ -138,6 +138,15 @@ class Media extends Store
 			}
 			break;
 		}
+		if(!isset($coreinfo['parent']) && array_key_exists('parent', $data) && isset($data['_refs']) && in_array('parent', $data['_refs']))
+		{
+			$coreinfo['parent'] = $data['parent'];
+		}
+		if(!isset($coreinfo['parent']))
+		{
+			/* Always set create a media_core row, so that parent IS NULL queries work */
+			$coreinfo['parent'] = null;
+		}
 		if(count($coreinfo))
 		{
 			$coreinfo['uuid'] = $uuid;
@@ -174,5 +183,38 @@ class Media extends Store
 			}
 		}
 		return parent::buildQuery($qlist, $tables, $query);
+	}
+
+	public function createClassificationPath($kind, $path)
+	{
+		$parent = null;
+		$path = explode('/', $path);
+		foreach($path as $p)
+		{
+			if(!strlen($p))
+			{
+				continue;
+			}
+			$rs = $this->query(array('kind' => $kind, 'parent' => $parent, 'tag' => $p, 'limit' => 1));
+			$data = $rs->next();
+			if($data)
+			{
+				if(!isset($data->title) && isset($data->slug))
+				{
+					$data->title = ucwords($data->slug);
+					$data->store();
+				}
+				$parent = $data->uuid;
+				continue;
+			}
+			$data = array('uuid' => UUID::generate(), 'kind' => $kind, 'parent' => $parent, 'slug' => $p);
+			if($parent !== null)
+			{
+				$data['_refs'][] = 'parent';
+			}
+			$this->setData($data);
+			$parent = $data['uuid'];
+		}
+		return $parent;
 	}
 }

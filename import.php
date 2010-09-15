@@ -79,6 +79,10 @@ class MediaImport extends CommandLine
 			echo $pathname . ": Error: Unable to import: " . $r . "\n";
 			return false;
 		}
+		if(!isset($asset->kind))
+		{
+			$asset->kind = null;
+		}
 		if(!isset($asset->uuid))
 		{
 			if(isset($asset->curie))
@@ -89,10 +93,22 @@ class MediaImport extends CommandLine
 					$asset->uuid = $uuid;
 				}
 			}
-		}
-		if(!isset($asset->kind))
-		{
-			$asset->kind = null;
+			if($asset->kind == 'genre' || $asset->kind == 'format' || $asset->kind == 'place' || $asset->kind == 'person' || $asset->kind == 'topic')
+			{
+				if(strlen($asset->slug))
+				{
+					$rs = $this->model->query(array('kind' => $asset->kind, 'parent' => $asset->parent, 'tag' => $asset->slug));
+					if(($obj = $rs->next()))
+					{
+						$asset->uuid = $obj->uuid;
+					}
+				}
+				else
+				{
+					echo $base . ": Refusing to import a " . $asset->kind . " with no slug. Sorry.\n";
+					return 1;
+				}
+			}
 		}
 		if(isset($asset->uuid))
 		{			
@@ -124,7 +140,6 @@ class MediaImport extends CommandLine
 			$created = true;
 		}
 		$asset->store();
-		print_r($asset);
 		if($created)
 		{
 			echo $base . ": Created with UUID ". $asset->uuid . "\n";

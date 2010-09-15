@@ -51,6 +51,19 @@ class Episode extends Asset
 		}
 		return parent::verify();
 	}
+
+	public function merge()
+	{
+		if(($obj = $this->offsetGet('series')) || ($obj = $this->offsetGet('show')))
+		{
+			$obj->merge();
+			$this->mergeReplace($obj, 'publisher');
+			$this->mergeArrays($obj, 'formats');
+			$this->mergeArrays($obj, 'topics');
+			$this->mergeArrays($obj, 'genres');
+			$this->mergeArrays($obj, 'tags');
+		}
+	}
 	
 	public function __get($name)
 	{
@@ -77,7 +90,6 @@ class Episode extends Asset
 			}
 			return $this->relativeURI;
 		}
-		return parent::__get($name);
 	}
 }
 

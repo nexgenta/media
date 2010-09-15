@@ -54,9 +54,8 @@ class MediaBrowse extends Page
 		}
 		if($this->object)
 		{
-			switch($this->object->kind)
+			if($this->object instanceof Episode)
 			{
-			case 'episode':
 				if(isset($this->object->series) || isset($this->object->show))
 				{
 					$this->request->redirect($this->request->base . $this->object->relativeURI);
@@ -64,6 +63,14 @@ class MediaBrowse extends Page
 				}
 				require_once(dirname(__FILE__) . '/browse-episode.php');
 				$inst = new MediaBrowseEpisode();
+				$inst->object = $this->object;
+				$inst->process($this->request);
+				return false;
+			}
+			if($this->object instanceof Show)
+			{
+				require_once(dirname(__FILE__) . '/browse-show.php');
+				$inst = new MediaBrowseShow();
 				$inst->object = $this->object;
 				$inst->process($this->request);
 				return false;

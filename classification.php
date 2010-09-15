@@ -1,5 +1,6 @@
 <?php
 
+
 /*
  * media: The media metadata model
  *
@@ -18,36 +19,39 @@
  *  limitations under the License.
  */
 
+uses('uuid');
+
 require_once(dirname(__FILE__) . '/asset.php');
 
-class Show extends Asset
-{
-	protected $relativeURI;
+/* Strictly speaking, a 'classification' shouldn't be considered any sort
+ * of asset, but it's close enough for our purposes.
+ */
 
+class Classification extends Asset
+{
 	public function verify()
 	{
 		$model = self::$models[get_class($this)];
-
-		return parent::verify();
-	}
-
-	public function __get($name)
-	{
-		if($name == 'relativeURI')
+		if(!isset($this->parent)) $this->parent = null;
+		switch($this->kind)
 		{
-			if(!strlen($this->relativeURI))
-			{
-				if(isset($this->slug))
-				{
-					$this->relativeURI = $this->slug;
-				}
-				else
-				{
-					$this->relativeURI = $this->uuid;
-				}
-			}
-			return $this->relativeURI;
+		case 'genre':
+			if(!strncmp($this->parent, '/genres', 7)) $this->parent = substr($this->parent, 7);
+			break;
 		}
+		if($this->parent == '/') $this->parent = null;
+		if(null === ($uuid = UUID::isUUID($this->parent)))
+		{		
+			$uuid = $model->createClassificationPath($this->kind, $this->parent);
+		}
+		if(null === $uuid && strlen($this->parent))
+		{
+			return 'Referenced parent path "' . $this->parent . '" is invalid';
+		}
+		if(null !== $uuid)
+		{
+			$this->referenceObject('parent', $uuid);
+		}
+		return true;
 	}
 }
-

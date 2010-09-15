@@ -27,14 +27,26 @@ class MediaBrowseEpisode extends Page
 
 	protected function getObject()
 	{
+		$this->object->merge();
 		$this->title = $this->object->title;
 		return true;
+	}
+	
+	protected function assignTemplate()
+	{
+		parent::assignTemplate();
+		$uri = $this->request->pageUri;
+		if(strlen($uri) > 1 && substr($uri, -1) == '/') $uri = substr($uri, 0, -1);		
+		$this->links[] = array('rel' => 'alternate', 'type' => 'application/rdf+xml', 'href' => $uri . '.rdf');
+		$this->links[] = array('rel' => 'alternate', 'type' => 'application/json', 'href' => $uri . '.json');
 	}
 
 	protected function perform_GET_RDF()
 	{
 		$this->request->header('Content-type', 'application/rdf+xml');
 		$this->request->flush();
+		$uri = $this->request->pageUri;
+		if(strlen($uri) > 1 && substr($uri, -1) == '/') $uri = substr($uri, 0, -1);		
 		writeLn('<?xml version="1.0" encoding="utf-8" ?>');
 		writeLn('<rdf:RDF ' .
 				'xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" ' .
@@ -52,15 +64,15 @@ class MediaBrowseEpisode extends Page
 				'xmlns:event="http://purl.org/NET/c4dm/event.owl#">');
 		
 		writeLn();
-		writeLn('<rdf:Description rdf:about="' . _e($this->request->uri) . '">');
+		writeLn('<rdf:Description rdf:about="' . _e($uri) . '.rdf">');
 		writeLn('<rdfs:label>Description of the episode ' . _e($this->title) . '</rdfs:label>');
 		writeLn('<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">' . strftime('%Y-%m-%dT%H:%M:%SZ', parse_datetime($this->object->created)) . '</dcterms:created>');
 		writeLn('<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">' . strftime('%Y-%m-%dT%H:%M:%SZ', parse_datetime($this->object->modified)) . '</dcterms:modified>');
-		writeLn('<foaf:primaryTopic rdf:resource="' . _e($this->request->uri . '#episode') . '" />');
+		writeLn('<foaf:primaryTopic rdf:resource="' . _e($uri . '#episode') . '" />');
 		writeLn('</rdf:Description>');
 		writeLn();
 		
-		writeLn('<po:Episode rdf:about="' . _e($this->request->uri . '#episode') . '">');
+		writeLn('<po:Episode rdf:about="' . _e($uri . '#episode') . '">');
 		writeLn();
 
 		if(isset($this->object->curie))
@@ -79,6 +91,10 @@ class MediaBrowseEpisode extends Page
 		if(isset($this->object->description))
 		{
 			writeLn('<po:long_synopsis>' . _e($this->object->description) . '</po:long_synopsis>');
+		}
+		if(isset($this->object->image))
+		{
+			writeLn('<foaf:depiction rdf:resource="' . _e($this->object->image) . '" />');
 		}
 		writeLn();
 

@@ -51,6 +51,14 @@ class Asset extends Storable
 				require_once(dirname(__FILE__) . '/show.php');
 				$className = 'Show';
 				break;
+			case 'genre':
+			case 'format':
+			case 'person':
+			case 'place':
+			case 'topic':
+				require_once(dirname(__FILE__) . '/classification.php');
+				$className = 'Classification';
+				break;
 			default:
 				trigger_error('Asset::objectForData(): No suitable class for a "' . $data['kind'] . '" asset is available', E_USER_NOTICE);
 				return null;
@@ -58,7 +66,37 @@ class Asset extends Storable
 		}
 		return parent::objectForData($data, $model, $className);
 	}
+
+	public function merge()
+	{
+	}
 	
+	protected function mergeReplace($parent, $key)
+	{
+		if(!isset($this->{$key}) && isset($parent->{$key}))
+		{
+			$this->{$key} = $parent->{$key};
+		}
+	}
+
+	protected function mergeArrays($parent, $key)
+	{
+		if(!isset($this->{$key}))
+		{
+			$this->{$key} = array();
+		}
+		if(isset($parent->{$key}))
+		{
+			foreach($parent->{$key} as $value)
+			{
+				if(!in_array($value, $this->{$key}))
+				{
+					$this->{$key}[] = $value;
+				}
+			}
+		}
+	}
+
 	protected function loaded($reloaded = false)
 	{
 		parent::loaded($reloaded);
@@ -74,7 +112,7 @@ class Asset extends Storable
 		$this->transformProperty('location', 'locations');
 		$this->transformProperty('aliases', 'aliases');
 		$this->ensurePropertyIsAnArray('containedIn');
-	}
+	}	
 	
 	protected function transformProperty($singular, $plural)
 	{

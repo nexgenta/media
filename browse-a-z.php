@@ -36,7 +36,7 @@ class MediaBrowseAZ extends Page
 		{
 			return $this->error(Error::OBJECT_NOT_FOUND);
 		}
-		$this->objects = $this->model->query(array('parent' => null, 'title_firstchar' => $letter));		
+		$this->objects = $this->model->query(array('parent' => null, 'kind' => array('show', 'episode'), 'title_firstchar' => $letter));		
 		return true;
 	}
 }

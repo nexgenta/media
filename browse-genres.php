@@ -18,12 +18,11 @@
  *  limitations under the License.
  */
 
-class MediaCommands extends App
+require_once(dirname(__FILE__) . '/browse-classes.php');
+
+class MediaBrowseGenres extends MediaBrowseClasses
 {
-	public function __construct()
-	{
-		parent::__construct();
-		$this->sapi['cli']['import'] = array('file' => 'import.php', 'class' => 'MediaImport', 'description' => 'Import media data from a file');
-		$this->sapi['cli']['convert-tva'] = array('file' => 'convert-tva.php', 'class' => 'MediaConvertTVA', 'description' => 'Convert TV-Anytime classification scheme XML');
-	}
+	protected $kind = 'genre';
+	protected $title = 'Genres';
+	protected $base = 'genres';
 }
