@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>New Jack Swing</title>
+	<description>New Jack Swing</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6..5.2.3</sameAs>
+	<slug>new-jack-swing</slug>
+	<parent>/music/blues-rhythm-and-blues-soul-gospel/r-and-b</parent>
+</genre>

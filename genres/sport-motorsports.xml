@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Motor sports</title>
+	<description>Motor sports</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8</sameAs>
+	<slug>motor-sports</slug>
+	<parent>/sport</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Bullfighting</title>
+	<description>Bullfighting</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.13</sameAs>
+	<slug>bullfighting</slug>
+	<parent>/entertainment</parent>
+</genre>

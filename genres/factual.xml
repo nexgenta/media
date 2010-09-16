@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Factual</title>
+	<description>NON-FICTION/INFORMATION</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1</sameAs>
+	<sameAs>http://www.bbc.co.uk/programmes/genres/factual#genre</sameAs>
+	<sameAs>http://dbpedia.org/resource/Factual_television</sameAs>
+	<slug>factual</slug>
+</genre>

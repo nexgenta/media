@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Simple game show</title>
+	<description>Simple game show</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.4.1.1</sameAs>
+	<slug>simple-game-show</slug>
+	<parent>/show/hosted-show</parent>
+</format>

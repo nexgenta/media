@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Panel-show</title>
+	<description>Panel-show</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.4.2</sameAs>
+	<slug>panel-show</slug>
+	<parent>/show</parent>
+</format>

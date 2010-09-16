@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Sound clip</title>
+	<description>Sound clip</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.3.14</sameAs>
+	<slug>sound-clip</slug>
+	<parent>/music/background-music</parent>
+</genre>

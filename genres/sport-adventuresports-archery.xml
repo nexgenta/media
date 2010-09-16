@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Archery</title>
+	<description>Archery</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.12.1</sameAs>
+	<slug>archery</slug>
+	<parent>/sport/adventure-sports</parent>
+</genre>

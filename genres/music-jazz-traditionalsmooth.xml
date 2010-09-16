@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Traditional/Smooth</title>
+	<description>Traditional/Smooth</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.2.5</sameAs>
+	<slug>traditional-smooth</slug>
+	<parent>/music/jazz</parent>
+</genre>

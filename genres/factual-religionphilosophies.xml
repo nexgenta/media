@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Religion/Philosophies</title>
+	<description>Religion/Philosophies</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.2</sameAs>
+	<slug>religion-philosophies</slug>
+	<parent>/factual</parent>
+</genre>

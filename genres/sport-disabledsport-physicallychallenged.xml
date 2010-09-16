@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Physically Challenged</title>
+	<description>Physically Challenged</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.24.1</sameAs>
+	<slug>physically-challenged</slug>
+	<parent>/sport/disabled-sport</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Flying</title>
+	<description>Flying</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.14.9</sameAs>
+	<slug>flying</slug>
+	<parent>/sport/air-sports</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Horse racing</title>
+	<description>Horse racing</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.11.3</sameAs>
+	<slug>horse-racing</slug>
+	<parent>/sport/equestrian</parent>
+</genre>

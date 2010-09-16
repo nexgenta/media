@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Gambling services</title>
+	<description>Gambling services</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.3.9</sameAs>
+	<slug>gambling-services</slug>
+	<parent>/interactive/always-on-connection</parent>
+</format>

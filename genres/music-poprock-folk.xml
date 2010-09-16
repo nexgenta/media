@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Folk</title>
+	<description>Folk</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.6</sameAs>
+	<slug>folk</slug>
+	<parent>/music/pop-rock</parent>
+</genre>

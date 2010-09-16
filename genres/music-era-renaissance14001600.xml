@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Renaissance (1400-1600)</title>
+	<description>Renaissance (1400-1600)</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.16.2</sameAs>
+	<slug>renaissance-1400-1600</slug>
+	<parent>/music/era</parent>
+</genre>

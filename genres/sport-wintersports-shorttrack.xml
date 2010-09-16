@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Short-track</title>
+	<description>Short-track</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7.20</sameAs>
+	<slug>short-track</slug>
+	<parent>/sport/winter-sports</parent>
+</genre>

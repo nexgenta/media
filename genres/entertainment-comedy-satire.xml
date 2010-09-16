@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Satire</title>
+	<description>Satire</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.7.4</sameAs>
+	<slug>satire</slug>
+	<parent>/entertainment/comedy</parent>
+</genre>

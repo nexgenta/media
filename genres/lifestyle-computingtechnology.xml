@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Computing/Technology</title>
+	<description>Computing/Technology</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.2</sameAs>
+	<slug>computing-technology</slug>
+	<parent>/lifestyle</parent>
+</genre>

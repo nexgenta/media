@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Speed skating</title>
+	<description>Speed skating</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7.16</sameAs>
+	<slug>speed-skating</slug>
+	<parent>/sport/winter-sports</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Wedding</title>
+	<description>Wedding</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.12.1</sameAs>
+	<slug>wedding</slug>
+	<parent>/music/event-music</parent>
+</genre>

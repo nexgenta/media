@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Dual player networked services/games</title>
+	<description>Dual player networked services/games</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.3.7</sameAs>
+	<slug>dual-player-networked-services-games</slug>
+	<parent>/interactive/always-on-connection</parent>
+</format>

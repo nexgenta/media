@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Drama</title>
+	<description>FICTION/DRAMA</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4</sameAs>
+	<sameAs>http://www.bbc.co.uk/programmes/genres/drama#genre</sameAs>
+	<slug>drama</slug>
+</genre>

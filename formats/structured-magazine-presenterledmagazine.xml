@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Presenter led magazine</title>
+	<description>Presenter led magazine</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.1.2.1</sameAs>
+	<slug>presenter-led-magazine</slug>
+	<parent>/structured/magazine</parent>
+</format>

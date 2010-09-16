@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Billiards</title>
+	<description>Billiards</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.9.1</sameAs>
+	<slug>billiards</slug>
+	<parent>/sport/social-sports</parent>
+</genre>

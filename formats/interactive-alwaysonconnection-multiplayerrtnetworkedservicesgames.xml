@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Multi player RT networked services/games</title>
+	<description>Multi player RT networked services/games</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.3.8</sameAs>
+	<slug>multi-player-rt-networked-services-games</slug>
+	<parent>/interactive/always-on-connection</parent>
+</format>

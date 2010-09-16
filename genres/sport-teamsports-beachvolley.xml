@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Beach volley</title>
+	<description>Beach volley</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.22</sameAs>
+	<slug>beach-volley</slug>
+	<parent>/sport/team-sports</parent>
+</genre>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Big game show</title>
+	<description>Big game show</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.4.2.2</sameAs>
+	<slug>big-game-show</slug>
+	<parent>/show/panel-show</parent>
+</format>

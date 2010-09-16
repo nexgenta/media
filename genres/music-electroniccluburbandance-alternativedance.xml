@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Alternative Dance</title>
+	<description>Alternative Dance</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.8.23</sameAs>
+	<slug>alternative-dance</slug>
+	<parent>/music/electronic-club-urban-dance</parent>
+</genre>

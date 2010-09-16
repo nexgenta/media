@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Beauty</title>
+	<description>Beauty</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.7.6</sameAs>
+	<slug>beauty</slug>
+	<parent>/lifestyle/personal-lifestyle-family</parent>
+</genre>

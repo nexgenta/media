@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Psychological drama</title>
+	<description>Psychological drama</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.19</sameAs>
+	<slug>psychological-drama</slug>
+	<parent>/drama</parent>
+</genre>

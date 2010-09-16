@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Rap/Hip Hop/Reggae</title>
+	<description>Rap/Hip Hop/Reggae</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.7</sameAs>
+	<slug>rap-hip-hop-reggae</slug>
+	<parent>/music</parent>
+</genre>

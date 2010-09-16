@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Board games</title>
+	<description>Board games</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.2.4</sameAs>
+	<slug>board-games</slug>
+	<parent>/interactive-games/style</parent>
+</genre>

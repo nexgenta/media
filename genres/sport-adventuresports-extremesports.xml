@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Extreme sports</title>
+	<description>Extreme sports</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.12.2</sameAs>
+	<slug>extreme-sports</slug>
+	<parent>/sport/adventure-sports</parent>
+</genre>

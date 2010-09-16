@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Blues/Rhythm and Blues/Soul/Gospel</title>
+	<description>Blues/Rhythm and Blues/Soul/Gospel</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.5</sameAs>
+	<slug>blues-rhythm-and-blues-soul-gospel</slug>
+	<parent>/music</parent>
+</genre>

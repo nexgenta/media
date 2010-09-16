@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Music comedy</title>
+	<description>Music comedy</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.5.7.11</sameAs>
+	<slug>music-comedy</slug>
+	<parent>/entertainment/comedy</parent>
+</genre>

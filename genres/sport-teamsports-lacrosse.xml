@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Lacrosse</title>
+	<description>Lacrosse</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.16</sameAs>
+	<slug>lacrosse</slug>
+	<parent>/sport/team-sports</parent>
+</genre>

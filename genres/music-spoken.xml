@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Spoken</title>
+	<description>Spoken</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.13</sameAs>
+	<slug>spoken</slug>
+	<parent>/music</parent>
+</genre>

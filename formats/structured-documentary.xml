@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<format>
+	<title>Documentary</title>
+	<description>Documentary</description>
+	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.1.4</sameAs>
+	<slug>documentary</slug>
+	<parent>/structured</parent>
+</format>

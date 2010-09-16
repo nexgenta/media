@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Science &amp; Nature</title>
+	<description>Sciences</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.6</sameAs>
+	<sameAs>http://www.bbc.co.uk/programmes/genres/factual/scienceandnature#genre</sameAs>
+	<slug>science-nature</slug>
+	<parent>/factual</parent>
+</genre>

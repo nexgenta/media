@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Water sports</title>
+	<description>Water sports</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.6</sameAs>
+	<slug>water-sports</slug>
+	<parent>/sport</parent>
+</genre>

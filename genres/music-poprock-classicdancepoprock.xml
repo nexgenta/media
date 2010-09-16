@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Classic/Dance/Pop-rock</title>
+	<description>Classic/Dance/Pop-rock</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.5</sameAs>
+	<slug>classic-dance-pop-rock</slug>
+	<parent>/music/pop-rock</parent>
+</genre>

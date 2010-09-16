@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Religious music</title>
+	<description>Religious music</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.15</sameAs>
+	<slug>religious-music</slug>
+	<parent>/music</parent>
+</genre>

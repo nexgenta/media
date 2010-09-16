@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<genre>
+	<title>Parallel bars</title>
+	<description>Parallel bars</description>
+	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.10.5</sameAs>
+	<slug>parallel-bars</slug>
+	<parent>/sport/gymnastics</parent>
+</genre>
