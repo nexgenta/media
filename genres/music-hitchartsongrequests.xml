@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Hit-Chart/Song Requests</title>
-	<description>Hit-Chart/Song Requests</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.10</sameAs>
-	<slug>hit-chart-song-requests</slug>
-	<parent>/music</parent>
-</genre>

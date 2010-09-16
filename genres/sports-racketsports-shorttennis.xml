@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Short tennis</title>
-	<description>Short tennis</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.4.3</sameAs>
-	<slug>short-tennis</slug>
-	<parent>/sports/racket-sports</parent>
-</genre>

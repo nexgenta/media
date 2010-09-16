@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Viewing chats</title>
-	<description>Viewing chats</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.1.3</sameAs>
-	<slug>viewing-chats</slug>
-	<parent>/interactive/local-interactivity</parent>
-</format>

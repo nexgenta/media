@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Concert</title>
-	<description>Concert</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.9.14</sameAs>
-	<slug>concert</slug>
-	<parent>/factual/events</parent>
-</genre>

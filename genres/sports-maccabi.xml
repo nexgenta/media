@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Maccabi</title>
-	<description>Maccabi</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.19</sameAs>
-	<slug>maccabi</slug>
-	<parent>/sports</parent>
-</genre>

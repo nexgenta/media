@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Netball</title>
-	<description>Netball</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.17</sameAs>
-	<slug>netball</slug>
-	<parent>/sports/team-sports</parent>
-</genre>

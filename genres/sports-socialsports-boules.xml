@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Boules</title>
-	<description>Boules</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.9.2</sameAs>
-	<slug>boules</slug>
-	<parent>/sports/social-sports</parent>
-</genre>

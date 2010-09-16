@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Threaded mail discussions</title>
-	<description>Threaded mail discussions</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.3.3</sameAs>
-	<slug>threaded-mail-discussions</slug>
-	<parent>/interactive/always-on-connection</parent>
-</format>

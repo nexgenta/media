@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Cookery</title>
-	<description>Cookery</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.3.1</sameAs>
-	<slug>cookery</slug>
-	<parent>/lifestyle/cookery-food-drink</parent>
-</genre>

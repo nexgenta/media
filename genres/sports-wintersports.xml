@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Winter sports</title>
-	<description>Winter sports</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7</sameAs>
-	<slug>winter-sports</slug>
-	<parent>/sports</parent>
-</genre>

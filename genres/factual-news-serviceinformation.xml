@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Service information</title>
-	<description>Service information</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.1.14</sameAs>
-	<slug>service-information</slug>
-	<parent>/factual/news</parent>
-</genre>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Multi stream audio-video</title>
-	<description>Multi stream audio-video</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.1.15</sameAs>
-	<slug>multi-stream-audio-video</slug>
-	<parent>/interactive/local-interactivity</parent>
-</format>

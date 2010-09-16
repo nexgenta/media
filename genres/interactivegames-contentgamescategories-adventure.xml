@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Adventure</title>
-	<description>Adventure</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.1.2</sameAs>
-	<slug>adventure</slug>
-	<parent>/interactive-games/content-games-categories</parent>
-</genre>

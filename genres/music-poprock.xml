@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Pop-rock</title>
-	<description>Pop-rock</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4</sameAs>
-	<slug>pop-rock</slug>
-	<parent>/music</parent>
-</genre>

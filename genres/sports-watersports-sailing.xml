@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Sailing</title>
-	<description>Sailing</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.6.8</sameAs>
-	<slug>sailing</slug>
-	<parent>/sports/water-sports</parent>
-</genre>

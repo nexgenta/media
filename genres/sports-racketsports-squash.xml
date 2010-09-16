@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Squash</title>
-	<description>Squash</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.4.5</sameAs>
-	<slug>squash</slug>
-	<parent>/sports/racket-sports</parent>
-</genre>

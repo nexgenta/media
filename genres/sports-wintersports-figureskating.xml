@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Figure skating</title>
-	<description>Figure skating</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7.17</sameAs>
-	<slug>figure-skating</slug>
-	<parent>/sports/winter-sports</parent>
-</genre>

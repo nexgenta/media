@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Power-lifting</title>
-	<description>Power-lifting</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.13.4</sameAs>
-	<slug>power-lifting</slug>
-	<parent>/sports/strength-based-sports</parent>
-</genre>

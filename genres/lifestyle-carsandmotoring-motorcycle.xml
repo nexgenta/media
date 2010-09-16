@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Motorcycle</title>
-	<description>Motorcycle</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.6.2</sameAs>
-	<slug>motorcycle</slug>
-	<parent>/lifestyle/cars-and-motoring</parent>
-</genre>

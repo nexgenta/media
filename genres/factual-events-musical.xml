@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Musical</title>
-	<description>Musical</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.9.4</sameAs>
-	<slug>musical</slug>
-	<parent>/factual/events</parent>
-</genre>

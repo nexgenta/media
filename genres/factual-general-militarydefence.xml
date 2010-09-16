@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Military/Defence</title>
-	<description>Military/Defence</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.3.8</sameAs>
-	<slug>military-defence</slug>
-	<parent>/factual/general</parent>
-</genre>

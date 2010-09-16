@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Makeover show</title>
-	<description>Makeover show</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.4.5.3</sameAs>
-	<slug>makeover-show</slug>
-	<parent>/show/reality-show</parent>
-</format>

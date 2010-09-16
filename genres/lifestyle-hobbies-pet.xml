@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Pet</title>
-	<description>Pet</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.5.2</sameAs>
-	<slug>pet</slug>
-	<parent>/lifestyle/hobbies</parent>
-</genre>

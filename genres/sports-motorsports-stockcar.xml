@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Stock car</title>
-	<description>Stock car</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.10</sameAs>
-	<slug>stock-car</slug>
-	<parent>/sports/motor-sports</parent>
-</genre>

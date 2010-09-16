@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Fair</title>
-	<description>Fair</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.9.2</sameAs>
-	<slug>fair</slug>
-	<parent>/factual/events</parent>
-</genre>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Political Science</title>
-	<description>Political Science</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.5.7</sameAs>
-	<slug>political-science</slug>
-	<parent>/factual/humanities</parent>
-</genre>

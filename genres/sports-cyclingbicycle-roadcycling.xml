@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Road cycling</title>
-	<description>Road cycling</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.2.4</sameAs>
-	<slug>road-cycling</slug>
-	<parent>/sports/cycling-bicycle</parent>
-</genre>

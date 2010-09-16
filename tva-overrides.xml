@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <overrides>
+  <!-- Genres -->
   <term>
 	<uri>urn:tva:metadata:cs:ContentCS:2010:3.1</uri>
 	<title>Factual</title>
 	<slug>factual</slug>
 	<description>Non-fiction/information</description>
+	<sameAs>http://www.bbc.co.uk/programmes/genres/factual#genre</sameAs>
+	<sameAs>http://dbpedia.org/resource/Factual_television</sameAs>
   </term>
   <term>
 	<uri>urn:tva:metadata:cs:ContentCS:2010:3.1.3</uri>
@@ -15,23 +18,59 @@
 	<uri>urn:tva:metadata:cs:ContentCS:2010:3.1.6</uri>
 	<title>Science &amp; Nature</title>
 	<slug>science-nature</slug>
+	<sameAs>http://www.bbc.co.uk/programmes/genres/factual/scienceandnature#genre</sameAs>
+  </term>
+  <term>
+	<uri>urn:tva:metadata:cs:ContentCS:2010:3.2</uri>
+	<title>Sport</title>
+	<slug>sport</slug>
+	<sameAs>http://www.bbc.co.uk/programmes/genres/sport#genre</sameAs>
   </term>
   <term>
 	<uri>urn:tva:metadata:cs:ContentCS:2010:3.4</uri>
 	<title>Drama</title>
 	<slug>drama</slug>
 	<description>Drama</description>
+	<sameAs>http://www.bbc.co.uk/programmes/genres/drama#genre</sameAs>
   </term>
   <term>
 	<uri>urn:tva:metadata:cs:ContentCS:2010:3.5</uri>
 	<title>Entertainment</title>
 	<slug>entertainment</slug>
 	<description>Entertainment</description>
+	<sameAs>http://www.bbc.co.uk/programmes/genres/entertainment#genre</sameAs>
+  </term>
+  <term>
+	<uri>urn:tva:metadata:cs:ContentCS:2010:3.7</uri>
+	<title>Interactive games</title>
   </term>
   <term>
 	<uri>urn:tva:metadata:cs:ContentCS:2010:3.8</uri>
 	<title>Lifestyle</title>
 	<slug>lifestyle</slug>
 	<description>Leisure, hobbies, and lifestyle</description>
+  </term>
+  <term>
+	<uri>urn:tva:metadata:cs:ContentCS:2010:3.9</uri>
+	<title>Adult Entertainment</title>
+	<slug>adult</slug>
+  </term>
+  <!-- Formats -->
+  <term>
+	<uri>urn:tva:metadata:cs:FormatCS:2010:2.2</uri>
+	<title>Films and plays</title>
+	<slug>films</slug>
+  </term>
+  <term>
+	<uri>urn:tva:metadata:cs:FormatCS:2010:2.3</uri>
+	<title>Animation &amp; Puppetry</title>
+	<slug>animation</slug>
+	<sameAs>http://www.bbc.co.uk/programmes/formats/animation#format</sameAs>
+  </term>
+  <term>
+	<uri>urn:tva:metadata:cs:FormatCS:2010:2.5</uri>
+	<title>Performances &amp; Events</title>
+	<slug>performances</slug>
+	<sameAs>http://www.bbc.co.uk/programmes/formats/performancesandevents#format</sameAs>
   </term>
 </overrides>

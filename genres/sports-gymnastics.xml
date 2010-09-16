@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Gymnastics</title>
-	<description>Gymnastics</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.10</sameAs>
-	<slug>gymnastics</slug>
-	<parent>/sports</parent>
-</genre>

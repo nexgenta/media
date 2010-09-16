@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Hurling</title>
-	<description>Hurling</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.23</sameAs>
-	<slug>hurling</slug>
-	<parent>/sports/team-sports</parent>
-</genre>

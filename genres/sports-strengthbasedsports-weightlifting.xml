@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Weight-lifting</title>
-	<description>Weight-lifting</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.13.5</sameAs>
-	<slug>weight-lifting</slug>
-	<parent>/sports/strength-based-sports</parent>
-</genre>

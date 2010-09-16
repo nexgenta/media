@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Media</title>
-	<description>Media</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.10</sameAs>
-	<slug>media</slug>
-	<parent>/factual</parent>
-</genre>

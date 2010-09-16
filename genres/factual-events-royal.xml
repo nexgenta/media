@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Royal</title>
-	<description>Royal</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.9.6</sameAs>
-	<slug>royal</slug>
-	<parent>/factual/events</parent>
-</genre>

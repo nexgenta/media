@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Transport and Communications</title>
-	<description>Transport and Communications</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.8</sameAs>
-	<slug>transport-and-communications</slug>
-	<parent>/factual</parent>
-</genre>

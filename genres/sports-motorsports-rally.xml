@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Rally</title>
-	<description>Rally</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.7</sameAs>
-	<slug>rally</slug>
-	<parent>/sports/motor-sports</parent>
-</genre>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Auto racing</title>
-	<description>Auto racing</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.8.1</sameAs>
-	<slug>auto-racing</slug>
-	<parent>/sports/motor-sports</parent>
-</genre>

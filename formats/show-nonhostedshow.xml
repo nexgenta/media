@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Non-hosted show</title>
-	<description>Non-hosted show</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.4.3</sameAs>
-	<slug>non-hosted-show</slug>
-	<parent>/show</parent>
-</format>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Political Drama</title>
-	<description>Political Drama</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.20</sameAs>
-	<slug>political-drama</slug>
-	<parent>/drama</parent>
-</genre>

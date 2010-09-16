@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Rave</title>
-	<description>Rave</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.8.5</sameAs>
-	<slug>rave</slug>
-	<parent>/music/electronic-club-urban-dance</parent>
-</genre>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Field</title>
-	<description>Field</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.1.1</sameAs>
-	<slug>field</slug>
-	<parent>/sports/athletics</parent>
-</genre>

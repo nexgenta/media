@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Indoor cycling</title>
-	<description>Indoor cycling</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.2.3</sameAs>
-	<slug>indoor-cycling</slug>
-	<parent>/sports/cycling-bicycle</parent>
-</genre>

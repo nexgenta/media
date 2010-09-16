@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Submit answers/form</title>
-	<description>Submit answers/form</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.2.5</sameAs>
-	<slug>submit-answers-form</slug>
-	<parent>/interactive/intermittent-response</parent>
-</format>

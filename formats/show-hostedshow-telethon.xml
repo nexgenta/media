@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Telethon</title>
-	<description>Telethon</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.4.1.3</sameAs>
-	<slug>telethon</slug>
-	<parent>/show/hosted-show</parent>
-</format>

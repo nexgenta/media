@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Gardening</title>
-	<description>Gardening</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.8.4.3</sameAs>
-	<slug>gardening</slug>
-	<parent>/lifestyle/homes-interior-gardening</parent>
-</genre>

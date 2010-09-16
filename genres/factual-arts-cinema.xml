@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Cinema</title>
-	<description>Cinema</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.4.5</sameAs>
-	<slug>cinema</slug>
-	<parent>/factual/arts</parent>
-</genre>

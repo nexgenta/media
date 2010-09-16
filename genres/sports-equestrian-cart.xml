@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Cart</title>
-	<description>Cart</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.11.1</sameAs>
-	<slug>cart</slug>
-	<parent>/sports/equestrian</parent>
-</genre>

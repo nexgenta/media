@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Alpine skiing</title>
-	<description>Alpine skiing</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.7.11</sameAs>
-	<slug>alpine-skiing</slug>
-	<parent>/sports/winter-sports</parent>
-</genre>

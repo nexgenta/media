@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Single impulse vote</title>
-	<description>Single impulse vote</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.2.1</sameAs>
-	<slug>single-impulse-vote</slug>
-	<parent>/interactive/intermittent-response</parent>
-</format>

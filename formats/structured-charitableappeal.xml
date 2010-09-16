@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Charitable Appeal</title>
-	<description>Charitable Appeal</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.1.10</sameAs>
-	<slug>charitable-appeal</slug>
-	<parent>/structured</parent>
-</format>

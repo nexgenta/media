@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Balle pelote</title>
-	<description>Balle pelote</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.9.10</sameAs>
-	<slug>balle-pelote</slug>
-	<parent>/sports/social-sports</parent>
-</genre>

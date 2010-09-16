@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Events</title>
-	<description>Events</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.9</sameAs>
-	<slug>events</slug>
-	<parent>/factual</parent>
-</genre>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Traditional Games</title>
-	<description>Traditional Games</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.23</sameAs>
-	<slug>traditional-games</slug>
-	<parent>/sports</parent>
-</genre>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Humanities</title>
-	<description>Humanities</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.5</sameAs>
-	<slug>humanities</slug>
-	<parent>/factual</parent>
-</genre>

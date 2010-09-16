@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>New Wave</title>
-	<description>New Wave</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.4.15</sameAs>
-	<slug>new-wave</slug>
-	<parent>/music/pop-rock</parent>
-</genre>

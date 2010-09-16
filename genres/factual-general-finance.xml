@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Finance</title>
-	<description>Finance</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.1.3.5</sameAs>
-	<slug>finance</slug>
-	<parent>/factual/general</parent>
-</genre>

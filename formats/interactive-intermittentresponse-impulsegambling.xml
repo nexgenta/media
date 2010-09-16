@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Impulse gambling</title>
-	<description>Impulse gambling</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.2.8</sameAs>
-	<slug>impulse-gambling</slug>
-	<parent>/interactive/intermittent-response</parent>
-</format>

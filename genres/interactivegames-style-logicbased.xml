@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Logic based</title>
-	<description>Logic based</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.7.2.1</sameAs>
-	<slug>logic-based</slug>
-	<parent>/interactive-games/style</parent>
-</genre>

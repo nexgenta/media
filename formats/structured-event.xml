@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Event</title>
-	<description>Event</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.1.3</sameAs>
-	<slug>event</slug>
-	<parent>/structured</parent>
-</format>

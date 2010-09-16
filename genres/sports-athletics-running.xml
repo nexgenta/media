@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Running</title>
-	<description>Running</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.1.4</sameAs>
-	<slug>running</slug>
-	<parent>/sports/athletics</parent>
-</genre>

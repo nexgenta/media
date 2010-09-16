@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Love songs</title>
-	<description>Love songs</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.3.6</sameAs>
-	<slug>love-songs</slug>
-	<parent>/music/background-music</parent>
-</genre>

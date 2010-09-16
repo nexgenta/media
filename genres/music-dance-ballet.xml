@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Ballet</title>
-	<description>Ballet</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.6.14.1</sameAs>
-	<slug>ballet</slug>
-	<parent>/music/dance</parent>
-</genre>

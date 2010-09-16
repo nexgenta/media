@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Dynamic 2D/3D graphics</title>
-	<description>Dynamic 2D/3D graphics</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.7.1.22</sameAs>
-	<slug>dynamic-2d-3d-graphics</slug>
-	<parent>/interactive/local-interactivity</parent>
-</format>

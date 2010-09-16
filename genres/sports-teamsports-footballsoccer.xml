@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Football (Soccer)</title>
-	<description>Football (Soccer)</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.3.12</sameAs>
-	<slug>football-soccer</slug>
-	<parent>/sports/team-sports</parent>
-</genre>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Trotting</title>
-	<description>Trotting</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.2.11.7</sameAs>
-	<slug>trotting</slug>
-	<parent>/sports/equestrian</parent>
-</genre>

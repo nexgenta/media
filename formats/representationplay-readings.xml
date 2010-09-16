@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<format>
-	<title>Readings</title>
-	<description>Readings</description>
-	<sameAs>urn:tva:metadata:cs:FormatCS:2010:2.2.2</sameAs>
-	<slug>readings</slug>
-	<parent>/representation-play</parent>
-</format>

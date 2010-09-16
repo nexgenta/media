@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<genre>
-	<title>Classical drama</title>
-	<description>Classical drama</description>
-	<sameAs>urn:tva:metadata:cs:ContentCS:2010:3.4.13</sameAs>
-	<slug>classical-drama</slug>
-	<parent>/drama</parent>
-</genre>
