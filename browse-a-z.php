@@ -36,6 +36,14 @@ class MediaBrowseAZ extends Page
 		{
 			return $this->error(Error::OBJECT_NOT_FOUND);
 		}
+		if($letter == '*')
+		{
+			$this->title = 'Browse: 0-9';
+		}
+		else
+		{
+			$this->title = 'Browse: ' . strtoupper($letter);
+		}
 		$this->objects = $this->model->query(array('parent' => null, 'kind' => array('show', 'episode'), 'title_firstchar' => $letter));		
 		return true;
 	}

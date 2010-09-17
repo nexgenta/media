@@ -62,6 +62,8 @@ class Episode extends Asset
 			$this->mergeArrays($obj, 'topics');
 			$this->mergeArrays($obj, 'genres');
 			$this->mergeArrays($obj, 'tags');
+			$this->mergeArrays($obj, 'people');
+			$this->mergeArrays($obj, 'licenses');
 		}
 	}
 	

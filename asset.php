@@ -56,6 +56,7 @@ class Asset extends Storable
 			case 'person':
 			case 'place':
 			case 'topic':
+			case 'license':
 				require_once(dirname(__FILE__) . '/classification.php');
 				$className = 'Classification';
 				break;
@@ -103,30 +104,37 @@ class Asset extends Storable
 		/* This is quite ugly, but works around some silly syntax issues
 		 * in import formats.
 		 */
-		$this->transformProperty('genre', 'genres');
-		$this->transformProperty('format', 'formats');
-		$this->transformProperty('topic', 'topics');
-		$this->transformProperty('tag', 'tags');
-		$this->transformProperty('person', 'people');
-		$this->transformProperty('broadcast', 'broadcasts');
+		$this->transformProperty('genre', 'genres', true);
+		$this->transformProperty('format', 'formats', true);
+		$this->transformProperty('topic', 'topics', true);
+		$this->transformProperty('tag', 'tags', true);
+		$this->transformProperty('person', 'people', true);
+		$this->transformProperty('place', 'places', true);
+		$this->transformProperty('license', 'licenses', true);
+		$this->transformProperty('broadcast', 'broadcasts', true);
 		$this->transformProperty('location', 'locations');
 		$this->transformProperty('aliases', 'aliases');
+		$this->ensurePropertyIsAnArray('sameAs');
 		$this->ensurePropertyIsAnArray('containedIn');
 	}	
 	
-	protected function transformProperty($singular, $plural)
+	protected function transformProperty($singular, $plural, $isRef = false)
 	{
 		if(isset($this->{$singular}))
 		{
-			if(is_array($this->{$singular}) && isset($this->{$singular}[0]))
+			if(is_array($this->{$singular}) && (!count($this->{$singular}) || isset($this->{$singular}[0])))
 			{
 				$this->{$plural} = $this->{$singular};
 			}
-			else
+			else if(count($this->{$singular}))
 			{
 				$this->{$plural} = array($this->{$singular});
 			}
 			unset($this->{$singular});
+		}
+		if(isset($this->{$plural}) && $isRef)
+		{
+			$this->referenceObject($plural, $this->{$plural});
 		}
 	}
 
@@ -140,6 +148,96 @@ class Asset extends Storable
 	
 	public function verify()
 	{
+		if(true !== ($r = $this->verifyClassificationProperty('genres', 'genre', '/genres/')))
+		{
+			return $r;
+		}
+		if(true !== ($r = $this->verifyClassificationProperty('formats', 'format', '/formats/')))
+		{
+			return $r;
+		}
+		if(true !== ($r = $this->verifyClassificationProperty('people', 'person', '/people/')))
+		{
+			return $r;
+		}
+		if(true !== ($r = $this->verifyClassificationProperty('places', 'place', '/places/')))
+		{
+			return $r;
+		}
+		if(true !== ($r = $this->verifyClassificationProperty('topics', 'topic', '/topics/')))
+		{
+			return $r;
+		}
+		if(true !== ($r = $this->verifyClassificationProperty('licenses', 'license', '/licenses/')))
+		{
+			return $r;
+		}
+		return true;
+	}
+
+	protected function verifyClassificationProperty($name, $kind, $root)
+	{
+		if(isset($this->{$name}))
+		{
+			$list = is_array($this->{$name}) ? $this->{$name} : array($this->{$name});
+		}
+		else
+		{
+			$list = array();
+		}
+		$r = $this->verifyClassificationList($list, $kind, $root);
+		$this->{$name} = $list;
+		return $r;
+	}
+
+	protected function verifyClassificationList(&$list, $kind, $root)
+	{
+		if(!is_array($list))
+		{
+			if($list === null)
+			{
+				$list = array();
+				return;
+			}
+			$list = array($list);
+		}
+		$model = self::$models[get_class($this)];
+		foreach($list as $k => $item)
+		{
+			if(strncmp($item, $root, strlen($root)) && strpos($item, ':') === false)
+			{
+				while(substr($item, 0, 1) == '/') $item = substr($item, 1);
+				$item = $root . $item;
+			}
+			if(null == ($uuid = UUID::isUUID($item)))
+			{
+				$rs = $model->query(array('kind' => $kind, 'iri' => $item));
+				if(($obj = $rs->next()))
+				{
+					$uuid = $obj->uuid;
+				}
+			} 
+			if($uuid === null)
+			{
+				if(strpos($item, ':') !== false)
+				{
+					$data = array(
+						'uuid' => UUID::generate(),
+						'kind' => $kind,
+						'uri' => $item,
+						'title' => $item,
+						'sameAs' => array($item),
+						);
+					$model->setData($data);
+					$uuid = $data['uuid'];
+				}
+				else
+				{
+					return $kind . ' "' . $item . '" does not exist';
+				}
+			}
+			$list[$k] = $uuid;
+		}
 		return true;
 	}
 }

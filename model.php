@@ -62,19 +62,27 @@ class Media extends Store
 		}
 		if(isset($data['formats']))
 		{
-			$data['tags'] = array_merge($data['tags'], $data['formats']);
+			$this->addClassificationsTagList($data['tags'], $data['formats']);
 		}
 		if(isset($data['genres']))
 		{
-			$data['tags'] = array_merge($data['tags'], $data['genres']);
+			$this->addClassificationsTagList($data['tags'], $data['genres']);
 		}
 		if(isset($data['people']))
 		{
-			$data['tags'] = array_merge($data['tags'], $data['people']);
+			$this->addClassificationsTagList($data['tags'], $data['people']);
 		}
 		if(isset($data['topics']))
 		{
-			$data['tags'] = array_merge($data['tags'], $data['topics']);
+			$this->addClassificationsTagList($data['tags'], $data['topics']);
+		}
+		if(isset($data['places']))
+		{
+			$this->addClassificationsTagList($data['tags'], $data['places']);
+		}
+		if(isset($data['licenses']))
+		{
+			$this->addClassificationsTagList($data['tags'], $data['licenses']);
 		}
 		if(isset($data['slug']))
 		{
@@ -92,6 +100,20 @@ class Media extends Store
 			else
 			{		  
 				$data['iri'][] = '[' . $data['curie'] . ']';
+			}
+		}
+		if(isset($data['sameAs']))
+		{
+			if(is_array($data['sameAs']))
+			{
+				foreach($data['sameAs'] as $iri)
+				{
+					$data['iri'][] = $iri;
+				}
+			}
+			else
+			{
+				$data['iri'][] = $iri;
 			}
 		}
 		$coreinfo = array();
@@ -156,6 +178,34 @@ class Media extends Store
 		return parent::storedTransaction($db, $args);
 	}
 
+	protected function addClassificationsTagList(&$list, $classes)
+	{
+		if(!is_array($list))
+		{
+			$list = array();
+		}
+		foreach($classes as $cl)
+		{
+			if(!in_array($cl, $list))
+			{
+				$list[] = $cl;
+			}
+			if(($data = $this->dataForUUID($cl)))
+			{
+				if(isset($data['ancestors']))
+				{
+					foreach($data['ancestors'] as $uuid)
+					{
+						if(!in_array($uuid, $list))
+						{
+							$list[] = $uuid;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	protected function buildQuery(&$qlist, &$tables, &$query)
 	{
 		if(!isset($tables['media_core'])) $tables['media_core'] = 'media_core';
@@ -216,5 +266,15 @@ class Media extends Store
 			$parent = $data['uuid'];
 		}
 		return $parent;
+	}
+	
+	public function deleteObjectWithUUID($uuid)
+	{
+		if(!parent::deleteObjectWithUUID($uuid))
+		{
+			return false;
+		}
+		$this->db->exec('DELETE FROM {media_core} WHERE "uuid" = ?', $uuid);
+		return true;
 	}
 }

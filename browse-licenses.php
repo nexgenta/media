@@ -20,10 +20,9 @@
 
 require_once(dirname(__FILE__) . '/browse-classes.php');
 
-class MediaBrowseGenres extends MediaBrowseClasses
+class MediaBrowseLicenses extends MediaBrowseClasses
 {
-	protected $kind = 'genre';
-	protected $title = 'Genres';
-	protected $base = 'genres';
-	protected $tvaNamespace = 'urn:tva:metadata:cs:ContentCS:2010:';
+	protected $kind = 'license';
+	protected $title = 'Licenses';
+	protected $base = 'licenses';
 }

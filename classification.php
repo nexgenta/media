@@ -36,15 +36,35 @@ class Classification extends Asset
 		switch($this->kind)
 		{
 		case 'genre':
-			if(!strncmp($this->parent, '/genres', 7)) $this->parent = substr($this->parent, 7);
+			$root = '/genres/';
+			break;
+		case 'format':
+			$root = '/formats/';
+			break;
+		case 'person':
+			$root = '/people/';
+			break;
+		case 'places':
+			$root = '/places/';
+			break;
+		case 'topic':
+			$root = '/topics/';
+			break;
+		case 'license':
+			$root = '/licenses/';
 			break;
 		}
-		if($this->parent == '/') $this->parent = null;
-		if(null === ($uuid = UUID::isUUID($this->parent)))
-		{		
-			$uuid = $model->createClassificationPath($this->kind, $this->parent);
+		$parent = $this->parent;
+		if(strlen($root))
+		{			
+			if(!strncmp($parent, $root, strlen($root))) $parent = substr($parent, strlen($root));
 		}
-		if(null === $uuid && strlen($this->parent))
+		if(!strlen($parent)) $this->parent = $parent = null;
+		if(null === ($uuid = UUID::isUUID($parent)))
+		{		
+			$uuid = $model->createClassificationPath($this->kind, $parent);
+		}
+		if(null === $uuid && strlen($parent))
 		{
 			return 'Referenced parent path "' . $this->parent . '" is invalid';
 		}
@@ -52,6 +72,23 @@ class Classification extends Asset
 		{
 			$this->referenceObject('parent', $uuid);
 		}
+		if(!isset($this->slug) || !strlen($this->slug))
+		{
+			$this->slug = $this->uuid;
+		}
+		$p = $this->parent;
+		$uri = array($this->slug);
+		$ancestors = array();
+		while($p !== null)
+		{
+			$ancestors[] = $p;
+			$data = $model->dataForUUID($p);
+			array_unshift($uri, $data['slug']);
+			$p = isset($data['parent']) ? $data['parent'] : null;
+		}
+		$this->relativeURI = implode('/', $uri);
+		$this->iri[] = $root . implode('/', $uri);
+		$this->ancestors = $ancestors;
 		return true;
 	}
 }

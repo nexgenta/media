@@ -35,6 +35,7 @@ class MediaBrowse extends Page
 		$this->routes['genres'] = array('file' => 'browse-genres.php', 'class' => 'MediaBrowseGenres');
 		$this->routes['formats'] = array('file' => 'browse-formats.php', 'class' => 'MediaBrowseFormats');
 		$this->routes['people'] = array('file' => 'browse-people.php', 'class' => 'MediaBrowsePeople');
+		$this->routes['licenses'] = array('file' => 'browse-licenses.php', 'class' => 'MediaBrowseLicenses');
 	}
 	
 	protected function getObject()

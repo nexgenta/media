@@ -25,5 +25,7 @@ class MediaCommands extends App
 		parent::__construct();
 		$this->sapi['cli']['import'] = array('file' => 'import.php', 'class' => 'MediaImport', 'description' => 'Import media data from a file');
 		$this->sapi['cli']['convert-tva'] = array('file' => 'convert-tva.php', 'class' => 'MediaConvertTVA', 'description' => 'Convert TV-Anytime classification scheme XML');
+		$this->sapi['cli']['sync'] = array('file' => 'sync.php', 'class' => 'MediaSync', 'description' => 'Synchronise dirty objects');
+		$this->sapi['cli']['delete'] = array('file' => 'delete.php', 'class' => 'MediaDelete', 'description' => 'Delete an object');
 	}
 }

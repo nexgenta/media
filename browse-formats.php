@@ -25,4 +25,5 @@ class MediaBrowseFormats extends MediaBrowseClasses
 	protected $kind = 'format';
 	protected $title = 'Formats';
 	protected $base = 'formats';
+	protected $tvaNamespace = 'urn:tva:metadata:cs:FormatCS:2010:';
 }

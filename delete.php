@@ -18,12 +18,29 @@
  *  limitations under the License.
  */
 
-require_once(dirname(__FILE__) . '/browse-classes.php');
+require_once(dirname(__FILE__) . '/model.php');
 
-class MediaBrowseGenres extends MediaBrowseClasses
+class MediaDelete extends CommandLine
 {
-	protected $kind = 'genre';
-	protected $title = 'Genres';
-	protected $base = 'genres';
-	protected $tvaNamespace = 'urn:tva:metadata:cs:ContentCS:2010:';
+	protected $modelClass = 'Media';
+
+	protected function checkArgs(&$args)
+	{
+		if(count($args) != 1)
+		{
+			return $this->error(Error::NO_OBJECT, null, null, 'Usage: media delete UUID');
+		}
+		$this->object = $this->model->dataForUUID($args[0]);
+		if(!$this->object)
+		{
+			return $this->error(Error::OBJECT_NOT_FOUND);
+		}
+		return true;
+	}
+
+	public function main($args)
+	{
+		$this->model->deleteObjectWithUUID($args[0]);
+	}
 }
+

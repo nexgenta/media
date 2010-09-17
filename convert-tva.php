@@ -128,6 +128,7 @@ class MediaConvertTVA extends CommandLine
 		$defName = $this->defaultLanguage($names, array('en-GB', 'en-US', 'en'));
 		$defDesc = $this->defaultLanguage($names, array('en-GB', 'en-US', 'en'));
 		$slug = $this->generateSlug($defName);
+		$sameAs = array($uri);
 		if(isset($this->overrideList[$uri]))
 		{
 			if(isset($this->overrideList[$uri]['title']))
@@ -142,6 +143,13 @@ class MediaConvertTVA extends CommandLine
 			{
 				$slug = $this->overrideList[$uri]['slug'];
 			}
+			foreach($this->overrideList[$uri]['sameAs'] as $same)
+			{
+				if(!in_array($same, $sameAs))
+				{
+					$sameAs[] = $same;
+				}
+			}
 		}
 		$filename = (strlen($parentname) ? $parentname . '-' : null) . str_replace('-', '', $slug);
 		echo $this->baseURI . $termId . " => " . $prefix . '/' . $slug . " [" . $filename . ".xml]\n";
@@ -150,7 +158,10 @@ class MediaConvertTVA extends CommandLine
 		fwrite($f, '<' . $this->kind . '>' . "\n");
 		fwrite($f, "\t" . '<title>' . _e($defName) . '</title>' . "\n");
 		fwrite($f, "\t" . '<description>' . _e($defDesc) . '</description>' . "\n");
-		fwrite($f, "\t" . '<sameAs>' . _e($this->baseURI . $termId) . '</sameAs>' . "\n");
+		foreach($sameAs as $uri)
+		{
+			fwrite($f, "\t" . '<sameAs>' . _e($uri) . '</sameAs>' . "\n");
+		}
 		fwrite($f, "\t" . '<slug>' . _e($slug) . '</slug>' . "\n");
 		if(strlen($prefix))
 		{
@@ -216,11 +227,19 @@ class MediaConvertTVA extends CommandLine
 			if(strlen($slug)) $info['slug'] = $slug;
 			if(strlen($title)) $info['title'] = $title;
 			if(strlen($description)) $info['description'] = $description;
+			foreach($term->sameAs as $same)
+			{
+				$info['sameAs'][] = trim($same);
+			}
 			if(!count($info))
 			{
 				echo basename($this->overrides) . ": Warning: skipping term with no overrides\n";
 				continue;
-			}			
+			}
+			if(!isset($info['sameAs']))
+			{
+				$info['sameAs'] = array();
+			}
 			$this->overrideList[$uri] = $info;
 		}
 		return true;

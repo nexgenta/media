@@ -26,9 +26,10 @@ abstract class MediaBrowseClasses extends Page
 {
 	protected $modelClass = 'Media';
 	protected $templateName = 'classes.phtml';
-	protected $supportedTypes = array('text/html', 'application/json', 'application/rdf+xml', 'application/atom+xml');
+	protected $supportedTypes = array('text/html', 'application/json', 'application/rdf+xml', 'text/xml');
 	protected $kind = 'thing';
 	protected $title = 'Things';
+	protected $kindTitle;
 	protected $children;
 
 	protected function getObject()
@@ -57,20 +58,24 @@ abstract class MediaBrowseClasses extends Page
 			$inst->process($this->request);
 			return false;
 		}
+		$this->kindTitle = $this->title;
 		if($this->object)
 		{		   
 			$this->title = $this->object->title;
 		}
 		$this->children = $this->model->query(array('parent' => $parent, 'kind' => $this->kind));
-		$uri = $this->request->pageUri;
-		if(strlen($uri) > 1 && substr($uri, -1) == '/') $uri = substr($uri, 0, -1);
-		$this->objects = $this->model->query(array('parent' => null, 'kind' => array('episode', 'show'), 'tags' => $uri));
+		if($this->object)
+		{
+			$this->objects = $this->model->query(array('parent' => null, 'kind' => array('episode', 'show'), 'tags' => $this->object->uuid));
+		}
 		return true;
 	}
 
 	protected function assignTemplate()
 	{
 		parent::assignTemplate();
+		$this->vars['root'] = $this->request->base . $this->base;
+		$this->vars['kindTitle'] = $this->kindTitle;
 		$this->vars['children'] = $this->children;
 		$uri = $this->request->pageUri;
 		if(strlen($uri) > 1 && substr($uri, -1) == '/') $uri = substr($uri, 0, -1);
@@ -147,5 +152,51 @@ abstract class MediaBrowseClasses extends Page
 		}
 		writeLn();
 		writeLn('</rdf:RDF>');
+	}
+
+	protected function perform_GET_XML()
+	{
+		$this->request->header('Content-type', 'text/xml');
+		$this->request->flush();
+		writeLn('<?xml version="1.0" encoding="UTF-8" ?>');
+		writeLn('<ClassificationScheme uri="' . _e($this->tvaNamespace) . '" ' . 
+				'xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" ' .
+				'xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" ' .
+                'xmlns:owl="http://www.w3.org/2002/07/owl#">');
+		foreach($this->children as $child)
+		{
+			$this->writeTVATerm($child);
+		}
+		writeLn('</ClassificationScheme>');
+	}
+
+	protected function writeTVATerm($node, $depth = "\t")
+	{
+		if(!isset($node->sameAs)) return;
+		$termId = null;
+		foreach($node->sameAs as $uri)
+		{
+			if(!strncmp($uri, $this->tvaNamespace, strlen($this->tvaNamespace)))
+			{
+				$termId = substr($uri, strlen($this->tvaNamespace));
+				break;
+			}
+		}
+		if($termId === null) return;
+		writeLn($depth . '<Term termID="' . _e($termId) . '">');
+		$ndepth = "\t" . $depth;
+		writeLn($ndepth . '<Name>' . _e($node->title) . '</Name>');
+		writeLn($ndepth . '<Definition>' . _e($node->title) . '</Definition>');
+		foreach($node->sameAs as $same)
+		{
+			if(!strcmp($same, $uri)) continue;
+			writeLn($ndepth . '<owl:sameAs rdf:resource="' . _e($same) . '" />');
+		}
+		$children = $this->model->query(array('kind' => $this->kind, 'parent' => $node->uuid));
+		while(($child = $children->next()))
+		{
+			$this->writeTVATerm($child, $ndepth);
+		}
+		writeLn($depth . '</Term>');
 	}
 }
