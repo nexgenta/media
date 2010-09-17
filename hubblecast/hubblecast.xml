@@ -11,6 +11,7 @@
   <genre>/genres/factual/science-nature/space-universe</genre>
   <format>/formats/structured/documentary</format>
   <topic>http://dbpedia.org/resource/Hubble_Space_Telescope</topic>
+  <license>/licenses/public-domain</license>
   <description>Welcome to the Hubblecast! Hubblecast features news and images from the NASA/ESA Hubble Space Telescope.</description>
    <mediumDescription>Hubblecast features news and images from the NASA/ESA Hubble Space Telescope.</mediumDescription>
    <shortDescription>News and images from the NASA/ESA Hubble Space Telescope.</shortDescription>

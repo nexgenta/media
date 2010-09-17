@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<episode>
+  <show>shiftrunstop.co.uk:srs</show>
+  <curie>shiftrunstop.co.uk:srs01</curie>
+  <title>Adam Tandy</title>
+  <description>Roo and Leila chat with Adam Tandy, producer of The Thick of It
+	and In the Loop, Leila sees How It Is at the Turbine Hall in the Tate
+	Modern, the pair try some really dreadful games, and Dave Green introduces
+	some of his favourite seasonal snacks.</description>
+  <person>/people/dave-green</person>
+  <person>/people/adam-tandy</person>
+  <topic>http://dbpedia.org/resource/In_the_Loop_(film)</topic>
+  <topic>http://dbpedia.org/resource/The_Thick_of_It</topic>
+  <episodeNumber>1</episodeNumber>
+  <slug>adam-tandy</slug>
+</episode>

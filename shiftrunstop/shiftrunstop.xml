@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<show>
+  <title>Shift Run Stop</title>
+  <person>/people/roo-reynolds</person>
+  <person>/people/leila-johnston</person>
+  <curie>shiftrunstop.co.uk:srs</curie>
+  <license>/licenses/creative-commons/by-nc-30</license>
+  <description>A fun podcast about culutral stuff, games, comedy, and interviews.</description>
+  <format>/formats/structured/discussion-interview-debate-talkshow</format>
+  <genre>/genres/entertainment/chat</genre>
+  <slug>shift-run-stop</slug>
+</show>
+	

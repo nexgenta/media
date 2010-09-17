@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<license>
+  <title>Creative Commons Attribution-NonCommercial 3.0</title>
+  <sameAs>http://creativecommons.org/licenses/by-nc/3.0/</sameAs>
+  <description>
+	You are free to share and to remix provided proper attribution to the creators
+	is given and you do not use the work for commercial purposes.
+  </description>
+  <parent>/licenses/creative-commons</parent>
+  <slug>by-nc-30</slug>
+  <uuid>ecc53b1a-3f31-4608-9ed7-a45a3368f7b</uuid>
+</license>
