@@ -54,6 +54,22 @@ class Episode extends Asset
 		return parent::verify();
 	}
 
+	protected function loaded($reloaded = false)
+	{
+		parent::loaded($reloaded);
+		if(!isset($this->parent))
+		{
+			if(isset($this->series))
+			{
+				$this->referenceObject('parent', $this->series);
+			}
+			else if(isset($this->show))
+			{
+				$this->referenceObject('parent', $this->series);
+			}
+		}
+	}
+
 	public function merge()
 	{
 		if(($obj = $this->offsetGet('series')) || ($obj = $this->offsetGet('show')))
