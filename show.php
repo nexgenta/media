@@ -44,6 +44,10 @@ class Show extends Asset
 	protected function loaded($reloaded = false)
 	{
 		parent::loaded($reloaded);
+		if(!isset($this->parent) && isset($this->show))
+		{
+			$this->referenceObject('parent', $this->show);
+		}
 		$model = self::$models[get_class($this)];
 		if(!isset($this->instanceClass) || !isset($this->property))
 		{
@@ -153,7 +157,7 @@ class Show extends Asset
 
 	public function merge()
 	{
-		if(($obj = $this->offsetGet('show')))
+		if(($obj = $this->offsetGet('parent')))
 		{
 			$obj->merge();
 			$this->mergeReplace($obj, 'publisher');
