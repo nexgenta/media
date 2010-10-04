@@ -179,6 +179,13 @@ class Asset extends Storable
 		}
 		if(isset($parent->{$key}))
 		{
+			if(isset($parent->_refs) && in_array($key, $parent->_refs))
+			{
+				if(!in_array($key, $this->_refs))
+				{
+					$this->_refs[] = $key;
+				}
+			}				
 			foreach($parent->{$key} as $value)
 			{
 				if(!in_array($value, $this->{$key}))
