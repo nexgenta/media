@@ -43,6 +43,11 @@ class Media extends Store
 		}
 		return null;
 	}
+
+	public function schemes()
+	{
+		return $this->query(array('kind' => 'scheme', 'parent' => null));
+	}
 	
 	public /*callback*/ function storedTransaction($db, $args)
 	{
@@ -83,6 +88,10 @@ class Media extends Store
 		if(isset($data['licenses']))
 		{
 			$this->addClassificationsTagList($data['tags'], $data['licenses']);
+		}
+		if(isset($data['collections']))
+		{
+			$this->addClassificationsTagList($data['tags'], $data['collections']);
 		}
 		if(isset($data['slug']))
 		{
@@ -138,11 +147,22 @@ class Media extends Store
 		}
 		switch($data['kind'])
 		{
+		case 'scheme':
+			$data['iri'][] = '[scheme:' . $data['singular'] . ']';
+			$data['iri'][] = '[scheme:' . $data['plural'] . ']';
+			break;
+		case 'resource':
+			if(isset($data['version']))
+			{
+				$coreinfo['parent'] = $data['version'];
+			}
+			break;
 		case 'version':
 			if(isset($data['episode']))
 			{
 				$coreinfo['parent'] = $data['episode'];
 			}
+			break;
 		case 'episode':
 			if(isset($data['series']))
 			{
@@ -235,9 +255,10 @@ class Media extends Store
 		return parent::buildQuery($qlist, $tables, $query);
 	}
 
-	public function createClassificationPath($kind, $path)
+	public function createClassificationPath($scheme, $path)
 	{
-		$parent = null;
+		$parent = $scheme->uuid;
+		$kind = $scheme->singular;
 		$path = explode('/', $path);
 		foreach($path as $p)
 		{
@@ -246,12 +267,17 @@ class Media extends Store
 				continue;
 			}
 			$rs = $this->query(array('kind' => $kind, 'parent' => $parent, 'tag' => $p, 'limit' => 1));
+			if($rs->EOF && $parent == $scheme->uuid)
+			{
+				$rs = $this->query(array('kind' => $kind, 'parent' => null, 'tag' => $p, 'limit' => 1));
+			}
 			$data = $rs->next();
 			if($data)
 			{
 				if(!isset($data->title) && isset($data->slug))
 				{
 					$data->title = ucwords($data->slug);
+					$data['parent'] = $parent;
 					$data->store();
 				}
 				$parent = $data->uuid;
@@ -276,5 +302,37 @@ class Media extends Store
 		}
 		$this->db->exec('DELETE FROM {media_core} WHERE "uuid" = ?', $uuid);
 		return true;
+	}
+
+	public function locateObject($slug, $parent = null, $kind = null)
+	{
+		$query = array();
+		$query['limit'] = 1;
+		if($parent !== false)
+		{
+			$query['parent'] = $parent;
+		}
+		if($kind !== null)
+		{
+			$query['kind'] = $kind;
+		}
+		if(null !== ($uuid = UUID::isUUID($slug)))
+		{
+			$query['uuid'] = $uuid;
+		}
+		else if(strpos($slug, ':') !== false)
+		{
+			$query['iri'] = $slug;
+		}
+		else
+		{
+			$query['tag'] = $slug;
+		}
+		$rs = $this->query($query);
+		foreach($rs as $obj)
+		{
+			return $obj;
+		}
+		return null;
 	}
 }

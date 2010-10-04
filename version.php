@@ -24,6 +24,9 @@ require_once(dirname(__FILE__) . '/asset.php');
 
 class Version extends Asset
 {
+	protected $resources;
+	protected $relativeURI;
+
 	public function verify()
 	{
 		$model = self::$models[get_class($this)];
@@ -40,5 +43,82 @@ class Version extends Asset
 		}
 		return parent::verify();
 	}
+	
+	public function __get($name)
+	{
+		if($name == 'resources')
+		{
+			return $this->getResources();
+		}
+		if($name == 'hasVideo')
+		{
+			$this->getResources();
+			foreach($this->resources as $res)
+			{
+				if(!strncmp($res->dataContainerFormat, 'video/', 6))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+		if($name == 'hasAudio')
+		{
+			$this->getResources();
+			foreach($this->resources as $res)
+			{
+				if(!strncmp($res->dataContainerFormat, 'audio/', 6))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+		if($name == 'hasTTML')
+		{
+			$this->getResources();
+			foreach($this->resources as $res)
+			{
+				if(!strncmp($res->dataContainerFormat, 'application/ttml+xml'))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+		if($name == 'relativeURI')
+		{
+			if(!strlen($this->relativeURI))
+			{
+				if(isset($this->slug))
+				{
+					$this->relativeURI = $this->slug;
+				}
+				else
+				{
+					$this->relativeURI = $this->uuid;
+				}
+				if(isset($this->episode) && ($obj = $this->offsetGet('episode')) && is_object($obj))
+				{
+					$this->relativeURI = $obj->relativeURI . '/' . $this->relativeURI;
+				}
+			}
+			return $this->relativeURI;
+		}
+	}
+	
+	protected function getResources()
+	{
+		if(!isset($this->resources))
+		{
+			$model = self::$models[get_class($this)];
+			$this->resources = array();
+			$rs = $model->query(array('kind' => 'resource', 'parent' => $this->uuid));
+			foreach($rs as $loc)
+			{
+				$this->resources[$loc->uuid] = $loc;
+			}
+		}
+		return $this->resources;
+	}
 }
-

@@ -23,6 +23,8 @@ require_once(dirname(__FILE__) . '/asset.php');
 class Episode extends Asset
 {
 	protected $relativeURI;
+	protected $versions = null;
+	public $instanceClass = 'http://purl.org/ontology/po/Episode';
 
 	public function verify()
 	{
@@ -64,34 +66,41 @@ class Episode extends Asset
 			$this->mergeArrays($obj, 'tags');
 			$this->mergeArrays($obj, 'people');
 			$this->mergeArrays($obj, 'licenses');
+			$this->mergeReplace($obj, 'template');
 		}
 	}
-	
+	  
 	public function __get($name)
 	{
-		if($name == 'relativeURI')
+		if($name == 'versions')
 		{
-			if(!strlen($this->relativeURI))
-			{
-				if(isset($this->slug))
-				{
-					$this->relativeURI = $this->slug;
-				}
-				else
-				{
-					$this->relativeURI = $this->uuid;
-				}
-				if(isset($this->series) && ($obj = $this->offsetGet('series')) && is_object($obj))
-				{
-					$this->relativeURI = $obj->relativeURI . '/' . $this->relativeURI;
-				}
-				else if(isset($this->show) && ($obj = $this->offsetGet('show')) && is_object($obj))
-				{
-					$this->relativeURI = $obj->relativeURI . '/' . $this->relativeURI;
-				}
-			}
-			return $this->relativeURI;
+			return $this->getVersions();
 		}
+		if($name == 'defaultVersion')
+		{
+			$this->getVersions();
+			foreach($this->versions as $ver)
+			{
+				return $ver;
+			}
+			return null;
+		}
+		return parent::__get($name);
+	}
+	
+	protected function getVersions()
+	{
+		if(!isset($this->versions))
+		{
+			$model = self::$models[get_class($this)];
+			$this->versions = array();
+			$rs = $model->query(array('kind' => 'version', 'parent' => $this->uuid));
+			foreach($rs as $ver)
+			{
+				$this->versions[$ver->uuid] = $ver;
+			}
+		}
+		return $this->versions;
 	}
 }
 

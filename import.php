@@ -60,6 +60,13 @@ class MediaImport extends CommandLine
 			require_once(dirname(__FILE__) . '/xmlreader.php');
 			$data = XMLMediaReader::read($pathname);
 			break;
+		case 'rdf':
+			uses('redland');
+			$model = new RedlandModel();
+			$parser = new RedlandParser();
+			$parser->parseFileIntoModel($pathname, 'http://www.bbc.co.uk/programmes/b00ty6b0', $model);
+			print_r($model);
+			break;
 		default:
 			echo $base . ": Error: Unsupported file type\n";
 			return false;
@@ -93,19 +100,29 @@ class MediaImport extends CommandLine
 					$asset->uuid = $uuid;
 				}
 			}
-			if($asset->kind == 'genre' || $asset->kind == 'format' || $asset->kind == 'place' || $asset->kind == 'person' || $asset->kind == 'topic')
+			if($asset instanceof Classification)
 			{
-				if(strlen($asset->slug))
+				if(!isset($asset->uuid) && strlen($asset->slug))
 				{
-					$rs = $this->model->query(array('kind' => $asset->kind, 'parent' => $asset->parent, 'tag' => $asset->slug));
-					if(($obj = $rs->next()))
-					{
+					if(($obj = $this->model->locateObject($asset->slug, $asset->parent, $asset->kind)))
+					{	
 						$asset->uuid = $obj->uuid;
 					}
 				}
-				else
+				if(!isset($asset->uuid) && isset($asset->sameAs))
 				{
-					echo $base . ": Refusing to import a " . $asset->kind . " with no slug. Sorry.\n";
+					foreach($asset->sameAs as $sameAs)
+					{
+						if(($obj = $this->model->locateObject($sameAs, false, $asset->kind)))
+						{	
+							$asset->uuid = $obj->uuid;
+							break;
+						}
+					}
+				}
+				if(!isset($asset->slug) && !isset($asset->sameAs))
+				{
+					echo $base . ": Refusing to import a " . $asset->kind . " with no useful information. Sorry.\n";
 					return 1;
 				}
 			}

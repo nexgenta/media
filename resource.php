@@ -18,12 +18,27 @@
  *  limitations under the License.
  */
 
-require_once(dirname(__FILE__) . '/browse-classes.php');
+uses('uuid');
 
-class MediaBrowseGenres extends MediaBrowseClasses
+require_once(dirname(__FILE__) . '/asset.php');
+
+class Resource extends Asset
 {
-	protected $kind = 'genre';
-	protected $title = 'Genres';
-	protected $base = 'genres';
-	protected $tvaNamespace = 'urn:tva:metadata:cs:ContentCS:2010:';
+	public function verify()
+	{
+		$model = self::$models[get_class($this)];
+		if(isset($this->version))
+		{
+			if((null !== ($uuid = UUID::isUUID($this->version))) || (null !== ($uuid = $model->uuidForCurie($this->version))))
+			{
+				$this->referenceObject('version', $uuid);
+			}
+			else
+			{
+				return "Referenced version '" . $this->version . "' does not exist yet.";
+			}
+		}
+		return parent::verify();
+	}
 }
+

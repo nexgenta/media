@@ -18,10 +18,15 @@
  *  limitations under the License.
  */
 
+uses('date', 'rdf');
+
 require_once(dirname(__FILE__) . '/model.php');
 
 class Asset extends Storable
 {
+	protected $relativeURI = null;
+	protected $storableClass = 'Asset';
+
 	public static function objectForData($data, $model = null, $className = null)
 	{
 		if(!$model)
@@ -39,28 +44,35 @@ class Asset extends Storable
 			case 'asset':
 				$className = 'Asset';
 				break;
+			case 'scheme':
+				require_once(dirname(__FILE__) . '/scheme.php');
+				$className = 'Scheme';
+				break;
+			case 'resource':
+				require_once(dirname(__FILE__) . '/resource.php');
+				$className = 'Resource';
+				break;
 			case 'version':
 				require_once(dirname(__FILE__) . '/version.php');
 				$className = 'Version';
 				break;
 			case 'episode':
+			case 'clip':
 				require_once(dirname(__FILE__) . '/episode.php');
 				$className = 'Episode';
 				break;
 			case 'show':
+			case 'series':
 				require_once(dirname(__FILE__) . '/show.php');
 				$className = 'Show';
 				break;
-			case 'genre':
-			case 'format':
-			case 'person':
-			case 'place':
-			case 'topic':
-			case 'license':
-				require_once(dirname(__FILE__) . '/classification.php');
-				$className = 'Classification';
-				break;
 			default:
+				if(($cs = $model->locateObject('[scheme:' . $data['kind'] . ']', null, 'scheme')))
+				{
+					require_once(dirname(__FILE__) . '/classification.php');
+					$className = 'Classification';
+					break;
+				}
 				trigger_error('Asset::objectForData(): No suitable class for a "' . $data['kind'] . '" asset is available', E_USER_NOTICE);
 				return null;
 			}
@@ -68,8 +80,87 @@ class Asset extends Storable
 		return parent::objectForData($data, $model, $className);
 	}
 
+	public function __get($name)
+	{
+		if($name == 'relativeURI')
+		{
+			if(null === $this->relativeURI)
+			{
+				$this->parentRelativeURI();
+				$this->relativeURI();
+			}
+			return $this->relativeURI;
+		}
+		if($name == 'instanceRelativeURI')
+		{
+			return $this->instanceRelativeURI();
+		}
+	}
+
+	protected function parentRelativeURI()
+	{
+		if(isset($this->parent) && ($obj = $this->offsetGet('parent')) && is_object($obj))
+		{
+			/* Use __get() because depending on the class of 'obj',
+			 * PHP may not invoke it magically...
+			 */
+			$this->relativeURI = $obj->__get('relativeURI');
+		}		
+	}
+
+	protected function relativeURI()
+	{
+		$slug = null;
+		if(isset($this->slug))
+		{
+			$slug = $this->slug;
+		}
+		else if(isset($this->pid))
+		{
+			$slug = $this->pid;
+		}
+		else if(isset($this->uuid))
+		{
+			$slug = $this->uuid;
+		}
+		if(strlen($this->relativeURI))
+		{
+			$this->relativeURI .= '/' . $slug;
+		}
+		else
+		{
+			$this->relativeURI = $slug;
+		}
+	}
+
+	protected function instanceRelativeURI()
+	{
+		return $this->__get('relativeURI') . '#' . (isset($this->fragment) ? $this->fragment : $this->kind);
+	}
+	
 	public function merge()
 	{
+	}
+
+	public function verify()
+	{
+		$model = self::$models[get_class($this)];
+		$rs = $model->query(array('kind' => 'scheme'));
+		foreach($rs as $scheme)
+		{
+			$this->transformProperty($scheme->singular, $scheme->plural, true);
+			if(true !== ($r = $this->verifyClassificationProperty($scheme->plural, $scheme->singular, '/' . $scheme->slug . '/')))
+			{
+				return $r;
+			}
+		}
+		$this->transformProperty('tag', 'tags');
+		$this->transformProperty('alias', 'aliases');
+		$this->transformProperty('link', 'links');
+		$this->transformProperty('credit', 'credits');
+		$this->ensurePropertyIsAnArray('sameAs');
+		$this->ensurePropertyIsAnArray('containedIn');
+		return true;
 	}
 	
 	protected function mergeReplace($parent, $key)
@@ -97,26 +188,6 @@ class Asset extends Storable
 			}
 		}
 	}
-
-	protected function loaded($reloaded = false)
-	{
-		parent::loaded($reloaded);
-		/* This is quite ugly, but works around some silly syntax issues
-		 * in import formats.
-		 */
-		$this->transformProperty('genre', 'genres', true);
-		$this->transformProperty('format', 'formats', true);
-		$this->transformProperty('topic', 'topics', true);
-		$this->transformProperty('tag', 'tags', true);
-		$this->transformProperty('person', 'people', true);
-		$this->transformProperty('place', 'places', true);
-		$this->transformProperty('license', 'licenses', true);
-		$this->transformProperty('broadcast', 'broadcasts', true);
-		$this->transformProperty('location', 'locations');
-		$this->transformProperty('aliases', 'aliases');
-		$this->ensurePropertyIsAnArray('sameAs');
-		$this->ensurePropertyIsAnArray('containedIn');
-	}	
 	
 	protected function transformProperty($singular, $plural, $isRef = false)
 	{
@@ -144,35 +215,6 @@ class Asset extends Storable
 		{
 			$this->{$name} = array($this->{$name});
 		}
-	}
-	
-	public function verify()
-	{
-		if(true !== ($r = $this->verifyClassificationProperty('genres', 'genre', '/genres/')))
-		{
-			return $r;
-		}
-		if(true !== ($r = $this->verifyClassificationProperty('formats', 'format', '/formats/')))
-		{
-			return $r;
-		}
-		if(true !== ($r = $this->verifyClassificationProperty('people', 'person', '/people/')))
-		{
-			return $r;
-		}
-		if(true !== ($r = $this->verifyClassificationProperty('places', 'place', '/places/')))
-		{
-			return $r;
-		}
-		if(true !== ($r = $this->verifyClassificationProperty('topics', 'topic', '/topics/')))
-		{
-			return $r;
-		}
-		if(true !== ($r = $this->verifyClassificationProperty('licenses', 'license', '/licenses/')))
-		{
-			return $r;
-		}
-		return true;
 	}
 
 	protected function verifyClassificationProperty($name, $kind, $root)
@@ -204,11 +246,6 @@ class Asset extends Storable
 		$model = self::$models[get_class($this)];
 		foreach($list as $k => $item)
 		{
-			if(strncmp($item, $root, strlen($root)) && strpos($item, ':') === false)
-			{
-				while(substr($item, 0, 1) == '/') $item = substr($item, 1);
-				$item = $root . $item;
-			}
 			if(null == ($uuid = UUID::isUUID($item)))
 			{
 				$rs = $model->query(array('kind' => $kind, 'iri' => $item));
@@ -239,5 +276,64 @@ class Asset extends Storable
 			$list[$k] = $uuid;
 		}
 		return true;
+	}
+
+	public function rdf($doc, $request)
+	{	   
+		$doc->namespace('http://purl.org/ontology/po/', 'po');
+		$doc->namespace('http://purl.org/ontology/mo/', 'mo');
+		$this->rdfDocument($doc, $request);
+		$this->rdfResource($doc, $request);
+		$this->rdfLinks($doc, $request);
+	}
+
+	protected function rdfDocument($doc, $request)
+	{
+		$resourceGraph = $doc->graph($doc->fileURI);
+		$resourceGraph->{'http://purl.org/dc/terms/created'}[] = new RDFDateTime($this->created);
+		$resourceGraph->{'http://purl.org/dc/terms/modified'}[] = new RDFDateTime($this->modified);
+	}
+
+	protected function rdfResource($doc, $request)
+	{
+	}
+
+	protected function rdfLinks($doc, $request)	   
+	{
+		if(isset($this->links))
+		{
+			foreach($this->links as $link)
+			{
+				$g = $doc->graph($link['href'], 'http://xmlns.com/foaf/0.1/Document');
+				if(isset($link['title']))
+				{
+					$g->{'http://purl.org/dc/elements/1.1/title'}[] = $link['title'];
+				}
+				if(isset($link['description']))
+				{
+					$g->{'http://purl.org/dc/elements/1.1/description'}[] = $link['description'];
+				}
+				$g->{'http://xmlns.com/foaf/0.1/primaryTopic'}[] = new RDFURI($doc->primaryTopic);
+			}
+		}
+	}
+
+	protected function rdfReference($uri, $request, $fragment = null)
+	{
+		if(strlen($fragment))
+		{
+			$fragment = '#' . $fragment;
+		}
+		if(null !== ($uuid = UUID::isUUID($uri)))
+		{
+			/* Fetch target */
+			$obj = self::$models[get_class($this)]->objectForUUID($uuid);
+			return new RDFURI($request->root . $obj->__get('instanceRelativeURI'));
+		}
+	    if(substr($uri, 0, 1) == '/')
+		{
+			return new RDFURI($uri . $fragment);
+		}
+		return new RDFURI($uri);
 	}
 }

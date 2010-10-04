@@ -18,12 +18,17 @@
  *  limitations under the License.
  */
 
-require_once(dirname(__FILE__) . '/browse-classes.php');
+uses('uuid');
 
-class MediaBrowseFormats extends MediaBrowseClasses
+require_once(dirname(__FILE__) . '/asset.php');
+
+class Scheme extends Asset
 {
-	protected $kind = 'format';
-	protected $title = 'Formats';
-	protected $base = 'formats';
-	protected $tvaNamespace = 'urn:tva:metadata:cs:FormatCS:2010:';
+	public function verify()
+	{
+		$model = self::$models[get_class($this)];
+
+		return parent::verify();
+	}
 }
+
