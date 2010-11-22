@@ -36,11 +36,26 @@ class MediaImport extends CommandLine
 	public function main($args)
 	{
 		$r = true;
-		foreach($args as $pathname)
+		$argList = $args;
+		while(count($argList))
 		{
-			if(!$this->importFile($pathname))
+			$pathname = array_shift($argList);
+			if(!($recurse = $this->importFile($pathname)))
 			{
 				$r = false;
+				continue;
+			}
+			if(is_array($recurse))
+			{
+				foreach($recurse as $file)
+				{
+					$file = strval($file);
+					if(!in_array($file, $args))
+					{
+						$args[] = $file;
+						$argList[] = $file;
+					}
+				}
 			}
 		}
 		return ($r ? 0 : 1);
@@ -48,42 +63,75 @@ class MediaImport extends CommandLine
 
 	protected function importFile($pathname)
 	{
-		$info = pathinfo($pathname);
-		$base = basename($pathname);
-		if(!isset($info['extension']))
+		$class = null;
+		$base = $pathname;	
+		if(!strncmp($pathname, 'http:', 5))
 		{
-			$info['extension'] = null;
+			uses('rdf');
+			$doc = RDF::documentFromURL($pathname);
+			if(is_object($doc))
+			{
+				require_once(dirname(__FILE__) . '/import-rdf.php');
+				$class = 'MediaImportRDF';
+			}
+			else
+			{
+				echo "No RDF found at $pathname\n";
+			}
 		}
-		switch($info['extension'])
+		else
 		{
-		case 'xml':
-			require_once(dirname(__FILE__) . '/xmlreader.php');
-			$data = XMLMediaReader::read($pathname);
-			break;
-		case 'rdf':
-			uses('redland');
-			$model = new RedlandModel();
-			$parser = new RedlandParser();
-			$parser->parseFileIntoModel($pathname, 'http://www.bbc.co.uk/programmes/b00ty6b0', $model);
-			print_r($model);
-			break;
-		default:
-			echo $base . ": Error: Unsupported file type\n";
+			$info = pathinfo($pathname);
+			$base = basename($pathname);
+			if(!isset($info['extension']))
+			{
+				$info['extension'] = null;
+			}
+			switch($info['extension'])
+			{
+			case 'xml':
+				require_once(dirname(__FILE__) . '/import-xml.php');
+				$class = 'MediaImportXML';
+				break;
+			case 'json':
+				require_once(dirname(__FILE__) . '/import-json.php');
+				$class = 'MediaImportJSON';
+				break;
+			case 'rdf':
+				require_once(dirname(__FILE__) . '/import-rdf.php');
+				$class = 'MediaImportRDF';
+				break;
+			default:
+				echo $base . ": Error: Unsupported file type\n";
+				return false;
+			}
+		}
+		if(!strlen($class) || !class_exists($class))
+		{
+			echo $base . ": Error: Unable to import (internal error -- class $class does not exist)\n";
 			return false;
 		}
+		$inst = new $class;
+		$data = $inst->importFile($pathname);
 		if(!$data)
 		{
-			echo $base . ": Error: Unable to import\n";
+			echo $base . ": Error: Unable to import: import class failed\n";
 			return false;
+		}
+		$recurse = null;
+		if(isset($data['_recurse']) && is_array($data['_recurse']))
+		{
+			$recurse = $data['_recurse'];
+			unset($data['_recurse']);
 		}
 		if(!($asset = Asset::objectForData($data)))
 		{
-			echo $base . ": Error: Unable to import\n";
+			echo $base . ": Error: Unable to import: could not create asset object\n";
 			return false;
 		}
 		if(true !== ($r = $asset->verify()))
 		{
-			echo $pathname . ": Error: Unable to import: " . $r . "\n";
+			echo $base . ": Error: Unable to import: " . $r . "\n";
 			return false;
 		}
 		if(!isset($asset->kind))
@@ -123,7 +171,7 @@ class MediaImport extends CommandLine
 				if(!isset($asset->slug) && !isset($asset->sameAs))
 				{
 					echo $base . ": Refusing to import a " . $asset->kind . " with no useful information. Sorry.\n";
-					return 1;
+					return false;
 				}
 			}
 		}
@@ -161,8 +209,21 @@ class MediaImport extends CommandLine
 		{
 			echo $base . ": Created with UUID ". $asset->uuid . "\n";
 		}
+		if(is_array($recurse) && count($recurse))
+		{
+			return $recurse;
+		}
 		return true;
 	}
 	
 }
 
+abstract class MediaImportBase
+{
+	protected $model;
+	
+	public function __construct()
+	{
+		$this->model = Media::getInstance();
+	}
+}
