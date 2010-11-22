@@ -40,5 +40,14 @@ class Resource extends Asset
 		}
 		return parent::verify();
 	}
+
+	public function dimensions($defW = 640, $defH = 360)
+	{
+		if(isset($this->videoHorizontalSize) && isset($this->videoVerticalSize))
+		{
+			return array($this->videoHorizontalSize, $this->videoVerticalSize);
+		}
+	}
 }
+
 

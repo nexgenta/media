@@ -26,7 +26,9 @@ class Version extends Asset
 {
 	protected $resources;
 	protected $relativeURI;
-
+	public $instanceClass = 'http://purl.org/ontology/po/Version';
+	public $property = 'http://purl.org/ontology/po/version';
+	
 	public function verify()
 	{
 		$model = self::$models[get_class($this)];
@@ -41,8 +43,92 @@ class Version extends Asset
 				return "Referenced episode '" . $this->episode . "' does not exist yet.";
 			}
 		}
+		if(true !== ($r = $this->verifyCredits()))
+		{
+			return $r;
+		}
 		return parent::verify();
 	}
+
+	protected function loaded($reloaded = false)
+	{
+		parent::loaded($reloaded);
+		$this->associateParents('episode');
+	}
+
+	protected function rdfDocument($doc, $request)
+	{
+		parent::rdfDocument($doc, $request);
+		$g = $doc->graph($doc->fileURI);
+		if(!isset($this->title))
+		{
+			if(isset($this->pid))
+			{
+				$this->title = $this->pid;
+			}
+			else if(isset($this->slug))
+			{
+				$this->title = $this->slug;
+			}
+			else if(isset($this->curie))
+			{
+				$this->title = $this->curie;
+			}
+			else
+			{
+				$this->title = $this->uuid;
+			}
+		}
+		$g->{'http://www.w3.org/2000/01/rdf-schema#label'}[] = 'Description of the ' . $this->kind . ' ' . $this->title;
+		$g->{'http://xmlns.com/foaf/0.1/primaryTopic'}[] = new RDFURI($doc->primaryTopic);
+	}
+
+	protected function rdfResource($doc, $request)
+	{
+		parent::rdfResource($doc, $request);
+		$model = self::$models[get_class($this)];
+		$g = $doc->graph($doc->primaryTopic, $this->instanceClass);
+		if(isset($this->sameAs))
+		{
+			foreach($this->sameAs as $same)
+			{
+				$g->{'http://www.w3.org/2002/07/owl#sameAs'}[] = new RDFURI($same);
+			}
+		}
+		$po = 'http://purl.org/ontology/po/';
+		if(isset($this->pid))
+		{
+			$g->{$po.'pid'}[] = $this->pid;
+		}
+		if(isset($this->credits))
+		{
+			foreach($this->credits as $cred)
+			{
+				if(isset($cred['character']) || isset($cred['characterRef']))
+				{
+					$uri = null;
+					if(isset($cred['characterRef']))
+					{
+						$obj = $model->objectForUUID($cred['characterRef'][0]);
+						if(!isset($cred['character']))
+						{
+							$cred['character'] = $obj->title;
+						}
+						$uri = $request->root . $obj->__get('instanceRelativeURI');
+					}					
+					$cc = new RDFGraph($uri, $po.'Character');
+					$cc->{'http://xmlns.com/foaf/0.1/name'}[] = $cred['character'];
+					$cg = new RDFGraph(null, $po.'Credit');
+					$cg->{$po.'role'}[] = $cc;
+					$obj = $model->objectForUUID($cred['person'][0]);					
+					$pp = new RDFGraph($request->root . $obj->__get('instanceRelativeURI'), $po.'Alias');
+					$pp->{'http://www.w3.org/2000/01/rdf-schema#label'}[] = $obj->title;
+					$cg->{$po.'participant'}[] = $pp;
+					$g->{$po.'credit'}[] = $cg;
+				}
+			}
+		}
+	}	
 	
 	public function __get($name)
 	{
@@ -86,25 +172,11 @@ class Version extends Asset
 			}
 			return false;
 		}
-		if($name == 'relativeURI')
+		if($name == 'dimensions')
 		{
-			if(!strlen($this->relativeURI))
-			{
-				if(isset($this->slug))
-				{
-					$this->relativeURI = $this->slug;
-				}
-				else
-				{
-					$this->relativeURI = $this->uuid;
-				}
-				if(isset($this->episode) && ($obj = $this->offsetGet('episode')) && is_object($obj))
-				{
-					$this->relativeURI = $obj->relativeURI . '/' . $this->relativeURI;
-				}
-			}
-			return $this->relativeURI;
+			return $this->dimensions();
 		}
+		return parent::__get($name);
 	}
 	
 	protected function getResources()
@@ -120,5 +192,22 @@ class Version extends Asset
 			}
 		}
 		return $this->resources;
+	}
+
+	public function dimensions($defW = 640, $defH = 360)
+	{
+		$this->getResources();
+		foreach($this->resources as $res)
+		{
+			if(empty($res->available))
+			{
+				continue;
+			}
+			if(isset($res->videoHorizontalSize) && isset($res->videoVerticalSize))
+			{
+				return array($res->videoHorizontalSize, $res->videoVerticalSize);
+			}
+		}
+		return array($defW, $defH);
 	}
 }

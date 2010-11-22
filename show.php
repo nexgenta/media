@@ -44,10 +44,7 @@ class Show extends Asset
 	protected function loaded($reloaded = false)
 	{
 		parent::loaded($reloaded);
-		if(!isset($this->parent) && isset($this->show))
-		{
-			$this->referenceObject('parent', $this->show);
-		}
+		$this->associateParents('show');
 		$model = self::$models[get_class($this)];
 		if(!isset($this->instanceClass) || !isset($this->property))
 		{

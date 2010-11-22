@@ -41,6 +41,10 @@ class Media extends Store
 		{
 			return $uuid;
 		}
+		if(($uuid = $this->db->value('SELECT "uuid" FROM {object_iri} WHERE "iri" = ?', $curie)))
+		{
+			return $uuid;
+		}
 		return null;
 	}
 

@@ -158,8 +158,54 @@ class Asset extends Storable
 		$this->transformProperty('alias', 'aliases');
 		$this->transformProperty('link', 'links');
 		$this->transformProperty('credit', 'credits');
+		$this->transformProperty('subject', 'subjects');
 		$this->ensurePropertyIsAnArray('sameAs');
+		$this->ensurePropertyIsAnArray('seeAlso');
 		$this->ensurePropertyIsAnArray('containedIn');
+		return true;
+	}
+
+	protected function associateParents($keys)
+	{
+		$keys = func_get_args();
+		if(!isset($this->parent))
+		{
+			foreach($keys as $k)
+			{
+				if(($s = $this->offsetGet($k)) && is_object($s))
+				{
+					$this->referenceObject('parent', $s->uuid);
+					return;
+				}
+			}
+		}
+	}		
+
+	protected function verifyCredits()
+	{
+		$this->transformProperty('credit', 'credits');
+		if(isset($this->credits))
+		{
+			foreach($this->credits as $k => $credit)
+			{
+				if(isset($credit['person']))
+				{
+					$r = $this->verifyClassificationList($this->credits[$k]['person'], 'person', '/people/');
+					if($r !== true)
+					{
+						return $r;
+					}
+				}
+				if(isset($credit['characterRef']))
+				{
+					$r = $this->verifyClassificationList($this->credits[$k]['characterRef'], 'character', '/characters/');
+					if($r !== true)
+					{
+						return $r;
+					}
+				}
+			}
+		}
 		return true;
 	}
 	
@@ -255,6 +301,7 @@ class Asset extends Storable
 		{
 			if(null == ($uuid = UUID::isUUID($item)))
 			{
+				echo "[kind=$kind, iri=$item]\n";
 				$rs = $model->query(array('kind' => $kind, 'iri' => $item));
 				if(($obj = $rs->next()))
 				{
@@ -325,7 +372,23 @@ class Asset extends Storable
 		}
 	}
 
-	protected function rdfReference($uri, $request, $fragment = null)
+	protected function rdfReferenceInto(&$list, $uri, $request, $fragment = null)
+	{
+		$r = $this->rdfReference($uri, $request, $fragment, true);
+		if(is_array($r))
+		{
+			foreach($r as $e)
+			{
+				$list[] = $e;
+			}
+		}
+		else if($r)
+		{
+			$list[] = $r;
+		}
+	}
+
+	protected function rdfReference($uri, $request, $fragment = null, $all = false)
 	{
 		if(strlen($fragment))
 		{
@@ -335,6 +398,16 @@ class Asset extends Storable
 		{
 			/* Fetch target */
 			$obj = self::$models[get_class($this)]->objectForUUID($uuid);
+			if($all)
+			{
+				$list = array();
+				while($obj && $obj->kind != 'scheme')
+				{
+					$list[] = new RDFURI($request->root . $obj->__get('instanceRelativeURI'));
+					$obj = $obj['parent'];
+				}
+				return $list;
+			}
 			return new RDFURI($request->root . $obj->__get('instanceRelativeURI'));
 		}
 	    if(substr($uri, 0, 1) == '/')
